@@ -74,6 +74,7 @@ main {
 
 section#tema > h1 {
     font: lighter 2.5em Milky Vintage;
+    color: #B6685B;
     margin: 5px;
     padding: 5px;
 }
@@ -82,10 +83,25 @@ section#tema > p {
     margin: 10px;
 }
 
-section#tema > div#cookie {
+section#tema > img#cookie {
     display: block;
-    background:#ECC8AF url(../imagens/cookies.jpg) no-repeat;
-    background-size: cover; 
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px; 
+}
+
+
+
+footer {
+    background-color: #B6685B;
+    color: white;
+    text-align: center;
+}
+
+footer > p > a {
+    color: white;
+    text-decoration-color: white;
+    font-weight: bold;
 }
 
 
