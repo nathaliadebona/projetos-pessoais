@@ -63,22 +63,13 @@ header > nav > a:hover {
 
 main {
     position: relative;
-    top: 50%;
-    left: 50%;
-
+    width: 90vw;
     background-color: white;
-    width: 800px;
-    height: 500px;
-    
-    transform: translate(-50%, -50%);
-
-    text-align: center;
+    margin: auto;
+    margin-top: 10px;
     padding: 10px;
-}
-
-section {
-    
-    
+    text-align: center;
+    border-radius: 20px;
 }
 
 section#tema > h1 {
@@ -90,4 +81,12 @@ section#tema > h1 {
 section#tema > p {
     margin: 10px;
 }
+
+section#tema > div#cookie {
+    display: block;
+    background:#ECC8AF url(../imagens/cookies.jpg) no-repeat;
+    background-size: cover; 
+}
+
+
 
