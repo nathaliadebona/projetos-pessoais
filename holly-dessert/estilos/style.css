@@ -72,6 +72,19 @@ main {
     border-radius: 20px;
 }
 
+section > img#imagem {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+section > h2 {
+    padding: 10px;
+    font: lighter 2em Milky Vintage;
+    color: #B6685B;
+}
+
 section#tema > h1 {
     font: lighter 2.5em Milky Vintage;
     color: #B6685B;
@@ -81,16 +94,47 @@ section#tema > h1 {
 
 section#tema > p {
     margin: 10px;
+    padding: 10px;
 }
 
-section#tema > img#cookie {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    border-radius: 20px; 
+section.preparo {
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
 }
 
+section.preparo > ul {
+    display: inline-block;
+    text-align: left;
+    list-style: none;
+    list-style-position: inside;
+    padding: 0;
+}
 
+section.preparo > ul > li::before {
+    content: "🍪";
+    padding-right: 8px;
+}
+
+section#cookie {
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+section#cookie > ol {
+    display: inline-block;
+    text-align: left;
+    list-style: none;
+    list-style-position: inside;
+    padding: 10px;
+    columns: 2;
+}
+
+section#cookie > ol > li::before {
+    content: "🥄";
+    padding-right: 8px;
+}
 
 footer {
     background-color: #B6685B;
