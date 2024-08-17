@@ -63,7 +63,7 @@ header > nav > a:hover {
 
 main {
     position: relative;
-    width: 90vw;
+    width: 80vw;
     background-color: white;
     margin: auto;
     margin-top: 10px;
@@ -74,7 +74,8 @@ main {
 
 section > img#imagem {
     display: block;
-    max-width: 100%;
+    max-width: 60%;
+    margin: auto;
     height: auto;
     border-radius: 20px;
 }
