@@ -36,11 +36,13 @@ header > h1 {
     color: white;
     font-size: 3em;
     font-weight: lighter;
+    text-shadow: 2px 2px 5px #75443b;
 }
 
 header > p {
     color: white;
     font-size: 1.5em;
+    text-shadow: 2px 2px 5px #75443b;
 }
 
 header > nav {
@@ -70,6 +72,7 @@ main {
     padding: 10px;
     text-align: center;
     border-radius: 20px;
+    box-shadow: 2px 5px 10px #74423a65;
 }
 
 section > img#imagem {
@@ -78,12 +81,14 @@ section > img#imagem {
     margin: auto;
     height: auto;
     border-radius: 20px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.450);;
 }
 
 section > h2 {
     padding: 10px;
     font: lighter 2em Milky Vintage;
     color: #B6685B;
+    text-shadow: 1px 3px 5px #74423a65;
 }
 
 section#tema > h1 {
@@ -91,6 +96,7 @@ section#tema > h1 {
     color: #B6685B;
     margin: 5px;
     padding: 5px;
+    text-shadow: 1px 3px 5px #74423a65;
 }
 
 section#tema > p {
@@ -138,6 +144,7 @@ section#cookie > ol > li::before {
 }
 
 footer {
+    margin-top: 10px;
     background-color: #B6685B;
     color: white;
     text-align: center;
