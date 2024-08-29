@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+/* 
+    Paleta de cores 
+    Vermelho: #E1523D
+    Verde: #2EDB8C
+*/
+
+body {
+    background-color: #e1533db6;
+}
+
+main#login-main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+
+    background-color: white;
+    width: 250px;
+    height: 550px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
+
+    transform: translate(-50%, -50%);
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
+}
+
+section#login > div#imagem {
+    display: block;
+    background: #e1533db6 url(../imagens/login.jpg) no-repeat;
+    background-size: cover;
+    background-position: left center;
+    height: 200px;
+}
+
+section#login > div#login-form {
+    display: block;
+    padding: 10px;
+}
+
+div#login-form > h1 {
+    text-align: center;
+    font-family: Sunflower;
+    color: #E1523D;
+    padding: 5px;
+}
+
+div#login-form > p {
+    text-align: justify;
+    font-family: Louis;
+    font-size: 0.9em;
+    padding: 5px;
+}
+
+form > div.campo > h2 {
+    font-family: Sunflower;
+    color: #E1523D;
+    text-align: justify;
+}
+
+form > div.campo > input {
+    font-size: 1em;
+    border-radius: 20px;
+    border-color: rgba(0, 0, 0, 0.349);
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+div.campo > label {
+    display: none;
+}
+
+form > input[type=submit] {
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+    font-size: 1em;
+    width: 50%;
+    height: 30px;
+    background-color: #E1523D;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;  
+}
+
+form > input[type=submit]:hover {
+    background-color: #e1533d50;
+    color: #E1523D;
+    font-weight: bold;
+}
+
+form > div.links {
+    text-align: center;
+}
+
+form > div.links > a {
+    font-family: Louis;
+    color: black;
+}
+
+div.links > a:hover {
+    color: #E1523D;
+}
+

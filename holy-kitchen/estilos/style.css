@@ -24,8 +24,6 @@ Azul: #2EDB8C
 }
 
 body, html {
-    background: url(../imagens/background.png) repeat;
-    background-size: cover;
     height: 100vh;
     width: 100vw;
 }
@@ -39,4 +37,25 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+}
+
+
+
+
+
+
+footer {
+    background-color: white;
+    font-family: Louis;
+    text-align: center;
+    margin-top: 10px;
+}
+
+footer > p > a {
+    color: #E1523D;
+    font-weight: bold;
+}
+
+footer > p > a:hover {
+    color: #2EDB8C;
 }
