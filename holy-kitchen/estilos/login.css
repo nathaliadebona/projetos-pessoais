@@ -48,7 +48,7 @@ section#login > div#login-form {
 
 div#login-form > h1 {
     text-align: center;
-    font-family: Sunflower;
+    font-family: Bohemian;
     color: #E1523D;
     padding: 5px;
 }
@@ -61,7 +61,7 @@ div#login-form > p {
 }
 
 form > div.campo > h2 {
-    font-family: Sunflower;
+    font-family: Bohemian;
     color: #E1523D;
     text-align: justify;
 }
