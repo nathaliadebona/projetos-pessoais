@@ -5,41 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Holy Kitchen!</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="icon" href="../holy-kitchen/imagens/favicon.ico">
+    <link rel="icon" href="imagens/favicon.ico">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/index.css">
     <link rel="stylesheet" href="estilos/media-query.css">
 </head>
 
 <body>
     <header>
         <nav>
-            <div id="menu">
-                <button id="burguer"><span class="material-icons">menu</span></button>
-                <ul>
+            <div class="menu">
+                <button id="menu-btn"><span class="material-icons">menu</span></button>
+                <ul id="menu-list">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Receitas Salgadas</a></li>
                     <li><a href="#">Receitas Doces</a></li>
                     <li><a href="#">Contato</a></li>
                 </ul>
             </div>
-            <h1 id="titulo">Holy Kitchen!</h1>
+            <h1 id="site-nome"><a href="#">Holy Kitchen!</a></h1>
             <div id="login-icon">
-                <a href="../holy-kitchen/login/login.html"><span class="material-icons">person</span></a>
+                <a href="login.html"><span class="material-icons">person</span></a>
             </div>
         </nav>
     </header>
 
     <main>
-        <div>
-            <h1>Bem-vindo ao Holy Kitchen!</h1>
+        <section id="main">
+            <h2>Bem-vindo ao Holy Kitchen!</h2>
             <p>Aqui você encontra as melhores receitas para os mais diversos gostos.</p>
-        </div>
+        </section>
 
+        <br>
+        <hr>
+        <br>
+        
         <section>
             <a href="publique.html">
                 <picture>
-                    <source media="(max-width: 670px)" srcset="imagens/publique-pq.jpg">
-                    <img src="imagens/publique.jpg" alt="Publique sua Receita">
+                    <source media="(max-width: 670px)" srcset="imagens/publique-pq.jpeg">
+                    <img src="imagens/publique.jpeg" alt="Publique sua Receita" title="Publique sua receita!">
                 </picture>
                 <h2>Publique sua Receita!</h2>
             </a>
@@ -49,25 +54,25 @@
             <h2><span class="linha"></span>Destaques da Semana <span class="linha"></span></h2>
 
             <div>
-                <div>
+                <article>
                     <a href="cookies.html">
                         <picture>
-                            <source media="(max-width: 670px)" srcset="imagens/cookie-pq.jpg">
-                            <img src="imagens/cookie.jpg" alt="Cookie">
+                            <source media="(max-width: 670px)" srcset="imagens/cookies-pq.jpeg">
+                            <img src="imagens/cookies.jpeg" alt="Cookies" title="Receita de Cookies!">
                         </picture>
                         <h3>Cookies</h3>
                     </a>
-                </div>
+                </article>
 
-                <div>
+                <article>
                     <a href="tomate.html">
                         <picture>
-                            <source media="(max-width: 670px )" srcset="imagens/tomate-pq.jpg">
-                            <img src="imagens/tomate.jpg" alt="Sopa de tomate">
+                            <source media="(max-width: 670px )" srcset="imagens/tomate-pq.jpeg">
+                            <img src="imagens/tomate.jpeg" alt="Sopa de tomate" title="Receita de sopa de tomate!">
                         </picture>
                         <h3>Sopa de Tomate</h3>
                     </a>
-                </div>
+                </article>
             </div>
         </section>
 
@@ -75,27 +80,27 @@
             <h2><span class="linha"></span>Dica Boa é Dica Compartilhada <span class="linha"></span></h2>
 
             <div>
-                <div>
+                <article>
                     <a href="pressa.html">
-                       <picture>
+                        <picture>
                             <source media="(max-width: 670px)" srcset="imagens/pressa-pq.jpg">
-                            <img src="imagens/pressa.jpg" alt="Pressa">
-                       </picture> 
-                       <h3>Está com pressa?</h3>
-                       <p>Confira essas receitas rápidas</p>
-                    </a>
-                </div>
+                            <img src="imagens/pressa.jpg" alt="Pressa" title="Receitas rápidas para quem está sem tempo!">
+                        </picture>
+                        <h3>Está com pressa?</h3>
+                        <p>Confira essas receitas rápidas</p>
+                        </a>
+                </article>
 
-                <div>
+                <article>
                     <a href="piquenique.html">
                         <picture>
                             <source media="(max-width: 670px)" srcset="imagens/piquenique-pq.jpg">
-                            <img src="imagens/piquenique.jpg" alt="Piquenique">
+                            <img src="imagens/piquenique.jpg" alt="Piquenique" title="Dicas para o seu piquenique!">
                         </picture>
                         <h3>Planejando um piquenique?</h3>
                         <p>Saiba o que levar na sua cesta</p>
                     </a>
-                </div>
+                </article>
             </div>
         </section>
     </main>

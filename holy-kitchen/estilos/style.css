@@ -29,7 +29,15 @@ body, html {
 }
 
 header {
+    padding: 10px;
     background-color: white;
+}
+
+main {
+    position: relative;
+    width: 90vw;
+    margin: auto;
+    text-align: center;
 }
 
 nav {
@@ -37,18 +45,86 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    background-color: white;
 }
 
 
+nav > div.menu {
+    position: relative;
+    display: inline-block;
+}
 
+nav > div.menu > button#menu-btn {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+}
 
+nav > div.menu > button#menu-btn:hover {
+    color: #2EDB8C;
+}
+
+nav > div.menu > ul#menu-list {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 8px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.596);
+}
+
+ul#menu-list > li {
+    list-style: none;
+}
+
+ul#menu-list > li > a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+ul#menu-list > li > a:hover {
+    background-color: white;
+    color: #2EDB8C;
+}
+
+div.menu:hover ul#menu-list {
+    display: block;
+}
+
+nav > h1#site-nome {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+nav > h1#site-nome > a {
+    font-family: Bohemian;
+    text-decoration: none;
+    color: #E1523D;
+}
+
+nav > div#login-icon > a > span {
+    width: 24px;
+    height: 24px;
+    color: black;
+}
+
+div#login-icon > a > span:hover {
+    color: #2EDB8C;
+}
 
 
 footer {
     background-color: white;
     font-family: Louis;
     text-align: center;
-    margin: 10px;
+    margin: 20px;
 }
 
 footer > p > a {

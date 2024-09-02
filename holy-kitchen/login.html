@@ -73,18 +73,18 @@
 <body>
     <header>
         <nav>
-            <div id="menu">
-                <button id="burguer"><span class="material-icons">menu</span></button>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
+            <div class="menu">
+                <button id="menu-btn"><span class="material-icons">menu</span></button>
+                <ul id="menu-list">
+                    <li><a href="#">Home</a></li>
                     <li><a href="#">Receitas Salgadas</a></li>
                     <li><a href="#">Receitas Doces</a></li>
                     <li><a href="#">Contato</a></li>
                 </ul>
             </div>
-            <h1 id="titulo">Holy Kitchen!</h1>
+            <h1 id="site-nome"><a href="index.html">Holy Kitchen!</a></h1>
             <div id="login-icon">
-                <a href="../holy-kitchen/login/login.html"><span class="material-icons">person</span></a>
+                <a href="login.html"><span class="material-icons">person</span></a>
             </div>
         </nav>
     </header>
@@ -96,18 +96,18 @@
             </div>
 
             <div id="login-form">
-                <h1>Login</h1>
+                <h2>Login</h2>
                 <p>Bem-vindo(a) novamente! Faça login para acessar sua conta e configurar seu ambiente.</p>
 
                 <form action="login.php" method="post" autocomplete="on">
                     <div class="campo">
-                        <h2>E-mail</h2>
+                        <h3>E-mail</h3>
                         <input type="email" name="login" id="ilogin" placeholder="Seu e-mail" autocomplete="email" required maxlength="30">
                         <label for="ilogin">Login</label>
                     </div>
 
                     <div class="campo">
-                        <h2>Senha</h2>
+                        <h3>Senha</h3>
                         <input type="password" name="Senha" id="isenha" placeholder="Sua senha" autocomplete="current-password" required minlength="8" maxlength="20">
                         <label for="isenha">Senha</label>
                     </div>

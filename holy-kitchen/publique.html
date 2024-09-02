@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Publique Sua Receita!</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="icon" href="../holy-kitchen/imagens/favicon.ico">
+    <link rel="icon" href="imagens/favicon.ico">
     <link rel="stylesheet" href="./estilos/style.css">
     <link rel="stylesheet" href="./estilos/publique.css">
 </head>
@@ -13,18 +13,18 @@
 <body>
     <header>
         <nav>
-            <div id="menu">
-                <button id="burguer"><span class="material-icons">menu</span></button>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
+            <div class="menu">
+                <button id="menu-btn"><span class="material-icons">menu</span></button>
+                <ul id="menu-list">
+                    <li><a href="#">Home</a></li>
                     <li><a href="#">Receitas Salgadas</a></li>
                     <li><a href="#">Receitas Doces</a></li>
                     <li><a href="#">Contato</a></li>
                 </ul>
             </div>
-            <h1 id="titulo">Holy Kitchen!</h1>
+            <h1 id="site-nome"><a href="index.html">Holy Kitchen!</a></h1>
             <div id="login-icon">
-                <a href="../holy-kitchen/login/login.html"><span class="material-icons">person</span></a>
+                <a href="login.html"><span class="material-icons">person</span></a>
             </div>
         </nav>
     </header>
@@ -32,11 +32,12 @@
     <main>
         <div>
             <picture>
-                <source media="(max-width: 670px)" srcset="imagens/publique-pq.jpg">
-                <img src="imagens/publique.jpg" alt="Publique sua receita">
+                <source media="(max-width: 670px)" srcset="imagens/publique-pq.jpeg">
+                <img src="imagens/publique.jpeg" alt="Publique sua receita">
             </picture>
-            <h1>Publique Sua Receita!</h1>
-            <p>Você tem alguma receita que é muito boa para ficar apenas no papel? Compartilha com a gente!</p>
+            <h2>Publique Sua Receita!</h2>
+            <p>Tem uma receita incrível que faz sucesso entre seus amigos e familiares? Compartilhe seu talento culinário com o mundo! Envie sua receita e inspire outros apaixonados por gastronomia a experimentar algo novo e delicioso.</p><br>
+            <p>Após o envio do seu formulário, nossa equipe irá avaliar suas informações cuidadosamente. Assim que sua receita for aprovada, você receberá um e-mail de confirmação e, em poucos dias, sua receita será publicada no nosso site.</p>
         </div>
 
         <section>
@@ -67,7 +68,7 @@
                 <p>
                     <label for="itempo">Qual o tempo de preparo?</label>
                     <input type="number" name="horas" id="itempo"  required min="0" max="23" placeholder="Horas" >
-                    <input type="number" name="minutos" id="itempo" required min="0" max="59" step="1" placeholder="Minutos">
+                    <input type="number" name="minutos" id="iminutos" required min="0" max="59" step="1" placeholder="Minutos">
                 </p>
 
                 <p>
