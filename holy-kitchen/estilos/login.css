@@ -113,3 +113,59 @@ div.links > a:hover {
     color: #E1523D;
 }
 
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    body {
+        background: url(../imagens/background-v2.png) repeat;
+        background-size: contain;
+    }
+
+    section#login {
+        width: 80vw;
+        height: 350px;
+    }
+
+    section#login > div#imagem {
+        background-position: left top;
+        float: left;
+        width: 30%;
+        height: 100%;
+    }
+
+    section#login > div#login-form {
+        float: right;
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    body {
+        background: url(../imagens/background-v2.png) repeat;
+        background-size: contain;;
+    }
+
+    section#login {
+        width: 950px;
+        height: 350px;
+    }
+
+    section#login > div#imagem {
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+
+    section#login > div#login-form {
+        float: right;
+        width: 50%;
+    }
+
+    div#login-form > h1 {
+        font-size: 2em;
+    }
+
+    div#login-form > p {
+        font-size: 1em;
+        margin: 5px;
+    }
+}
+

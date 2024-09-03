@@ -3,7 +3,7 @@
 /*
 Paleta de cores
 Vermelho: #E1523D
-Azul: #2EDB8C
+Azul: #0066FF
 */
 
 @font-face {
@@ -28,16 +28,15 @@ body, html {
     width: 100vw;
 }
 
-header {
-    padding: 10px;
-    background-color: white;
-}
+/* Estilização do menu*/
 
-main {
-    position: relative;
-    width: 90vw;
-    margin: auto;
-    text-align: center;
+header {
+    padding: 5px;
+    background-color: white;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(102, 101, 101, 0.24);
 }
 
 nav {
@@ -46,8 +45,8 @@ nav {
     align-items: center;
     padding: 10px;
     background-color: white;
+    
 }
-
 
 nav > div.menu {
     position: relative;
@@ -64,7 +63,7 @@ nav > div.menu > button#menu-btn {
 }
 
 nav > div.menu > button#menu-btn:hover {
-    color: #2EDB8C;
+    color: #0066FF;
 }
 
 nav > div.menu > ul#menu-list {
@@ -90,7 +89,7 @@ ul#menu-list > li > a {
 
 ul#menu-list > li > a:hover {
     background-color: white;
-    color: #2EDB8C;
+    color: #0066FF;
 }
 
 div.menu:hover ul#menu-list {
@@ -116,15 +115,29 @@ nav > div#login-icon > a > span {
 }
 
 div#login-icon > a > span:hover {
-    color: #2EDB8C;
+    color: #0066FF;
 }
 
+/* Estilização do conteúdo  */
+
+main {
+    position: relative;
+    width: 90vw;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
 
 footer {
+    width: 90wv;
     background-color: white;
     font-family: Louis;
     text-align: center;
-    margin: 20px;
+    padding: 5px;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: rgba(102, 101, 101, 0.24);
+
 }
 
 footer > p > a {
@@ -133,5 +146,5 @@ footer > p > a {
 }
 
 footer > p > a:hover {
-    color: #2EDB8C;
+    color: #0066FF;
 }
