@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+/*
+Paleta de cores
+Vermelho: #E1523D
+Azul: #0066FF
+*/
+
+header {
+    padding: 5px;
+    background-color: white;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(102, 101, 101, 0.24);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: white;  
+}
+
+nav > div.menu {
+    position: relative;
+    display: inline-block;
+}
+
+nav > div.menu > button#menu-btn {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+}
+
+nav > div.menu > button#menu-btn:hover {
+    color: #0066FF;
+}
+
+nav > div.menu > ul#menu-list {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 8px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.596);
+}
+
+ul#menu-list > li {
+    list-style: none;
+}
+
+ul#menu-list > li > a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+ul#menu-list > li > a:hover {
+    background-color: white;
+    color: #0066FF;
+}
+
+div.menu:hover ul#menu-list {
+    display: block;
+}
+
+nav > h1#site-nome {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+nav > h1#site-nome > a {
+    font-family: Mermaid;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #E1523D;
+}
+
+nav > div#login-icon > a > span {
+    width: 24px;
+    height: 24px;
+    color: black;
+}
+
+div#login-icon > a > span:hover {
+    color: #0066FF;
+}

@@ -6,21 +6,15 @@ Vermelho: #E1523D
 Azul: #2EDB8C
 */
 
-main {
-    position: relative;
-    width: 90vw;
-    margin: auto;
-    text-align: center;
-}
-
 main > section#main {
     margin: 10px;
     text-align: center;
 }
 
 main > section#main > h2 {
-    font-family: Bohemian;
+    font-family: Mermaid;
     color: #E1523D;
+    font-size: 2em;
 }
 
 main > section#main > p {
@@ -29,9 +23,30 @@ main > section#main > p {
     padding: 10px;
 }
 
-main > hr {
-    border: none;
-    height: 1px;
-    background-color: #E1523D;
-    margin-bottom: 10px;
+section > h2.linha {
+    color: black;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
 }
+
+section > h2.linha::before,
+section > h2.linha::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #e1533d8a;
+    margin: 0 10px;
+}
+
+picture > img {
+    margin: 10px;
+    width: 400px;
+}
+
+article {
+    margin-top: 10px;
+}
+
+
+
