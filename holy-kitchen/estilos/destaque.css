@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+/*
+Paleta de cores
+Vermelho: #E1523D
+Azul: #0066FF
+*/
+
+h2 {
+    font-size: 1.8em;
+    margin: 5px;
+}
+
+h3 {
+    margin: 10px;
+}
+
+h3.info, ul.info-list {
+    text-align: justify;
+}
+
+section > h3.linha {
+    display: flex;
+    align-items: center;
+}
+
+section > h3.linha::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid rgba(102, 101, 101, 0.404);
+    margin: 0 10px;
+}
+
+article {
+    text-align: justify;
+}

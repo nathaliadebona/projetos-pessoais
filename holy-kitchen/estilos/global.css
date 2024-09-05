@@ -44,6 +44,13 @@ hr {
     border: none;
     height: 1px;
     background-color: #E1523D;
+    margin-bottom: 5px;
+}
+
+div > picture > img {
+    width: 450px;
+    height: 300px;
+    object-fit: cover;
     margin-bottom: 10px;
 }
 
@@ -72,6 +79,15 @@ a > p {
 a > p:hover {
     color: #0066FF;
     text-decoration: underline;
+}
+
+p, li {
+    font-family: Louis;
+    font-size: 1.1em;
+}
+
+ul {
+    list-style-position: inside;
 }
 
 footer {

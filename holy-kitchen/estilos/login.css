@@ -48,7 +48,8 @@ section#login > div#login-form {
 
 div#login-form > h2 {
     text-align: center;
-    font-family: Bohemian;
+    font-family: Mermaid;
+    font-size: 1.6em;
     color: #E1523D;
     padding: 5px;
 }
@@ -61,7 +62,8 @@ div#login-form > p {
 }
 
 form > div.campo > h3 {
-    font-family: Bohemian;
+    font-family: Mermaid;
+    font-size: 1.2em;
     color: #E1523D;
     text-align: justify;
 }
