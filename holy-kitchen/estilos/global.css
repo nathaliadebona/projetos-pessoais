@@ -48,6 +48,7 @@ hr {
 }
 
 div > picture > img {
+    align-items: center;
     width: 450px;
     height: 300px;
     object-fit: cover;
@@ -88,6 +89,21 @@ p, li {
 
 ul {
     list-style-position: inside;
+}
+
+p.veja-tambem {
+    font-family: Mermaid;
+    color: #E1523D;
+}
+
+p.veja-tambem > a {
+    color: black;
+    text-decoration: underline;
+}
+
+p.veja-tambem > a:hover {
+    text-decoration: underline;
+    color: #0066FF;
 }
 
 footer {
