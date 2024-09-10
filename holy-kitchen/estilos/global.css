@@ -47,18 +47,22 @@ hr {
     margin-bottom: 5px;
 }
 
-div > picture > img {
-    align-items: center;
-    width: 450px;
-    height: 300px;
-    object-fit: cover;
-    margin-bottom: 10px;
+a > picture > img {
+    text-align: center;
+}
+
+img {
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 h2, h3, h4 {
     font-family: Mermaid;
     color: #E1523D;
     font-size: 1.5em;
+    margin: 8px;
 }
 
 a {

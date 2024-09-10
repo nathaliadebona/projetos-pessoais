@@ -39,11 +39,6 @@ section > h2.linha::after {
     margin: 0 10px;
 }
 
-picture > img {
-    margin: 10px;
-    width: 400px;
-}
-
 article {
     margin-top: 10px;
 }
