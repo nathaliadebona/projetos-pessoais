@@ -8,10 +8,70 @@ Azul: #0066FF
 
 h2 {
     font-size: 1.8em;
-    margin: 5px;
+    margin: 8px;
 }
 
 p {
     padding: 5px;
+    font-family: Louis;
 }
+
+form {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: Mermaid;
+    font-size: 1.2em;
+    color: #E1523D;
+}
+
+input, select, textarea {
+    text-align: center;
+    font-size: 0.9em;
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border-color: rgba(0, 0, 0, 0.349);
+}
+
+select {
+    padding: 0;
+    height: 30px;
+}
+
+input[type=file] {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+p#botoes {
+    margin-top: 20px;
+}
+
+input[type=submit], input[type=reset] {
+    width: 80%;
+    background-color: #E1523D;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 1em;
+}
+
+input[type=submit]:hover, input[type=reset]:hover {
+    background-color: #e1533d50;
+    color: #E1523D;
+    font-weight: bold;
+}
+
+
+
+
+
 
