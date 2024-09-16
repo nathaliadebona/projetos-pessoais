@@ -35,3 +35,36 @@ section > h3.linha::after {
 article {
     text-align: justify;
 }
+
+/* Estilos para telas maiores (mínimo 769px)*/
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+
+    main > div.introducao {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    div.introducao > div.imagem {
+        flex: 1;
+    }
+
+    div.imagem > img {
+        width: 100%;
+        height: auto;
+        float: right;
+    }
+
+    div.introducao > div.receita {
+        flex: 1;
+        padding: 0 20px;
+        max-width: 500px;
+        float: left;
+    }
+
+    div.receita > h2, div.receita > p {
+        margin: 0px;
+    }
+}
