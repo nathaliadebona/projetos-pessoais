@@ -9,7 +9,6 @@ Azul: #0066FF
 header {
     padding: 5px;
     background-color: white;
-    border-top-width: 1px;
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: rgba(102, 101, 101, 0.24);
@@ -85,9 +84,13 @@ nav > h1#site-nome > a {
     color: #E1523D;
 }
 
+nav > div#login-icon {
+    position: relative;
+    right: 20px;
+}
+
 nav > div#login-icon > a > span {
-    width: 24px;
-    height: 24px;
+    font-size: 26px;
     color: black;
 }
 
@@ -96,50 +99,6 @@ div#login-icon > a > span:hover {
 }
 
 
-/* Estilos para versões de tela maiores (mínimo 769px) */
 
-@media screen and (min-width: 769px) and (max-width: 992px) {
 
-    nav {
-        display: grid;
-        grid-template-columns: 1fr auto 1fr;
-        align-items: center;
-    }
-
-    nav > div.menu > button#menu-btn {
-        display: none; /* Esconder o botão de menu */
-    }
-
-    nav > h1#site-nome {
-        justify-self: start;
-        grid-column: 1 / 2;
-        font-size: 1.3em;
-    }
-
-    nav > div.menu > ul#menu-list {
-        display: flex;
-        justify-self: center;
-        gap: 20px;
-        box-shadow: none;
-        background-color: transparent;
-        grid-column: 2 / 3;
-    }
-
-    ul#menu-list > li {
-        display: inline-block;
-    }
-
-    ul#menu-list > li > a {
-        padding: 0px;
-        font-size: 18px;
-        color: black;
-        text-decoration: none;
-    }
-
-    nav > div#login-icon {
-        grid-column: 3 / 4;
-        display: flex;
-        justify-content: flex-end;
-        margin-right: 10px;
-    }
-}
+    
