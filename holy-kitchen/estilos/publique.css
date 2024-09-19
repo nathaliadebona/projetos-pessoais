@@ -72,6 +72,88 @@ input[type=submit]:hover, input[type=reset]:hover {
 }
 
 
+/* Estilização para telas maiores*/
+
+@media (min-width: 768px) {
+
+    main > div {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    } 
+
+    main > div > picture {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    main > div > picture > img {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+    }
+
+    main > div > h2 {
+        font-size: 2em;
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    main > div > p {
+        font-size: 1.2em;
+        line-height: 1.5;
+        text-align: justify;
+        margin-bottom: 10px;
+    }
+
+    form {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    form > p {
+        margin-bottom: 15px;
+    }
+
+    input, select, textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+    }
+
+    label {
+        font-size: 1.6em;
+    }
+
+    input[type=file] {
+        display: block;
+        margin: 0 auto;
+    }
+
+    p#botoes {
+        text-align: center;
+    }
+
+    input[type=submit], input[type=reset] {
+        width: 45%;
+        margin: 5px; 
+    }
+}
+
+@media (min-width: 1024px) {
+
+    main > div {
+        max-width: 1000px;
+        padding: 40px;
+    }
+
+    main > div > picture > img {
+        max-width: ;
+    }
+}
+
+
 
 
 

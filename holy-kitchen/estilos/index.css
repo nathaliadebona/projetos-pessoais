@@ -7,21 +7,21 @@ Azul: #2EDB8C
 */
 
 section {
-    padding: 5px;
+    padding: 15px;
 }
 
-main > section#main {
-    margin: 10px;
+main > section.main {
+    margin: 15px;
     text-align: center;
 }
 
-main > section#main > h2 {
+main > section.main > h2 {
     font-family: Mermaid;
     color: #E1523D;
     font-size: 2em;
 }
 
-main > section#main > p {
+main > section.main > p {
     font-family: Louis;
     font-size: 1.1em;
     padding: 10px;
@@ -45,10 +45,138 @@ section > h2.linha::after {
 }
 
 article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     margin-top: 10px;
     padding: 5px;
+    text-align: left;
+}
+
+article > a {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+article > a > picture,
+article > a > h3,
+article > a > p {
+    width: 100%;
+}
+
+article > a > h3 {
+    font-family: Mermaid;
+    color: #E1523D;
+    font-size: 1.5em;
+    margin: 5px 0;
+}
+
+article > a > p {
+    font-family: Louis;
+    font-size: 1.1em;
+    margin: 0;
 }
 
 
+/* Estilizações para telas maiores (tablets)*/
+
+@media (min-width: 768px) {
+    
+    section {
+        padding: 15px;
+    }
+
+    main > section.main {
+        margin: 15px auto;
+        max-width: 750px;
+    }
+
+    main > section.main > h2 {
+        font-size: 2.5em;
+    }
+
+    main > section.main > p {
+        font-size: 1.2em;
+    }
+
+    section > h2.linha {
+        font-size: 2em;
+    }
+
+    section > h2.linha::before, 
+    section > h2.linha::after {
+        border-bottom: 2px solid #e1533d8a;
+        margin: 0 10px;
+    }
+
+    section > div {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    section#publique > a > h3 {
+        font-size: 1.8em;
+    }
+
+    article {
+        flex: 1 1 calc(50% - 20%);
+        box-sizing: border-box;
+    }
+
+    article > a > h3 {
+        font-size: 1.6em;
+    }
+
+    article > a > p {
+        font-size: 1.2em;
+    }
+}
+
+
+/* Estilizações para telas maiores (desktops)*/
+
+@media (min-width: 1024px) {
+
+    section {
+        padding: 20px;
+    }
+
+    main > section.main {
+        margin: 20px auto;
+        max-width: 900px;
+    }
+
+    main > section.main > h2 {
+        font-size: 3em;
+    }
+
+    main > section.main > p {
+        font-size: 1.3em;
+    }
+
+    section > h2.linha {
+        font-size: 2.5em;
+    }
+
+    section > h2.linha::before,
+    section > h2.linha::after {
+        border-bottom: 3px solid #e1533d8a;
+        margin: 0 15px;
+    }
+
+    section#publique > a > h3 {
+        font-size: 2em;
+    }
+
+    article > a > h3 {
+        font-size: 2em;
+    }
+
+    article > a > p {
+        font-size: 1.3em;
+    }
+}
 
 
