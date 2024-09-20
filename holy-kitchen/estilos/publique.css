@@ -72,7 +72,7 @@ input[type=submit]:hover, input[type=reset]:hover {
 }
 
 
-/* Estilização para telas maiores*/
+/* Estilização para telas maiores (tablets) */
 
 @media (min-width: 768px) {
 
@@ -82,19 +82,8 @@ input[type=submit]:hover, input[type=reset]:hover {
         padding: 20px;
     } 
 
-    main > div > picture {
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    main > div > picture > img {
-        width: 100%;
-        max-width: 600px;
-        height: auto;
-    }
-
     main > div > h2 {
-        font-size: 2em;
+        font-size: 2.5em;
         text-align: center;
         margin: 15px 0;
     }
@@ -123,7 +112,7 @@ input[type=submit]:hover, input[type=reset]:hover {
     }
 
     label {
-        font-size: 1.6em;
+        font-size: 1.7em;
     }
 
     input[type=file] {
@@ -141,15 +130,57 @@ input[type=submit]:hover, input[type=reset]:hover {
     }
 }
 
+/* Estilização para telas maiores (desktops) */
+
 @media (min-width: 1024px) {
 
     main > div {
-        max-width: 1000px;
+        max-width: 1000px; /* Aumenta a largura máxima */
+        padding: 40px; /* Adiciona mais espaçamento interno */
+    }
+
+    main > div > h2 {
+        font-size: 3em;
+    }
+
+    main > div > p {
+        font-size: 1.3em;
+        line-height: 1.5;
+    }
+
+    form {
+        max-width: 1000px; /* Aumenta a largura máxima do formulário */
+        margin: 0 auto; /* Centraliza o formulário */
         padding: 40px;
     }
 
-    main > div > picture > img {
-        max-width: ;
+    form > p {
+        margin-bottom: 20px; /* Espaço abaixo dos campos */
+    }
+
+    input, select, textarea {
+        width: calc(100% - 20px); /* Ajusta a largura dos campos para caber no formulário */
+        padding: 12px;
+        margin-top: 5px;
+    }
+
+    label {
+        font-size: 1.8em;
+    }
+
+    input[type=file] {
+        display: block;
+        margin: 0 auto; /* Centraliza o campo de upload */
+    }
+
+    p#botoes {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    input[type=submit], input[type=reset] {
+        width: 45%;
+        margin: 5px; 
     }
 }
 
