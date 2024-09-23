@@ -47,6 +47,102 @@ article {
 
 @media (min-width: 768px) {
 
+    main > div {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    div.introducao {
+        padding: 20px;
+    }
+
+    div.introducao > div.receita {
+        max-width: 80vw;
+    }
     
+    div.introducao > div.receita > h2 {
+        font-size: 2.5em;
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    div.introducao > div.receita > p {
+        font-size: 1.2em;
+        line-height: 1.5;
+        text-align: justify;
+        margin-bottom: 10px;
+    }
+
+    hr {
+        margin-top: 10px;
+        margin-bottom: auto;
+    }
+
+    article > section {
+        margin: 10px;
+    }
+
+    article > section > h3 {
+        font-size: 1.7em;
+    }
+
+    article > section > ul {
+        font-size: 1.1em;
+        margin-bottom: 15px;
+    }
+
+    section > ul > li {
+        padding: 3px;
+    }
+
+    section > h3.linha::after {
+        border-bottom: 1px solid rgba(102, 101, 101, 0.6);
+    }
+}
+
+
+/* Estilização para telas maiores (desktops) */
+
+@media (min-width: 1024px) {
+
+    main > div,
+    main > article {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 30px;
+    }
+
+    main > article {
+        padding-top: 0;
+    }
+
+    div.introducao {
+        padding: 30px;
+        max-width: 1000px;
+        margin: 0 auto; 
+    }
+
+    div.introducao > div.receita {
+        max-width: 70vw;
+        margin-top: 20px;
+    }
+
+    div.introducao > div.receita > h2 {
+        font-size: 3em;
+    }
+
+    div.introducao > div.receita > p {
+        font-size: 1.5em;
+    }
+
+    article > section > h3 {
+        font-size: 1.8em;
+    }
+
+    article > section > ul {
+        font-size: 1.4em;
+        margin-bottom: 15px;
+    }
 }
 
