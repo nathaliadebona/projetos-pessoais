@@ -9,33 +9,35 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <div id="frete">
             <p>Frete grátis para todo o Brasil a partir de R$250,00 em compras!</p>
         </div>
 
         <div id="title">
-            <a href="#"><span class="material-icons">search</span></a>
+            <a class="icons" href="#"><span class="material-icons">search</span></a>
 
-            <h1>Sweet Flame</h1>
+            <h1>ee ae</h1>
 
-            <a href="#"><span class="material-icons">shopping_bag</span></a>
+            <div>
+                <a  class="icons" href="#"><span class="material-icons">shopping_bag</span></a>
 
-            <a href="#"><span class="material-icons">person</span></a>
+                <a  class="icons" href="#"><span class="material-icons" onclick="clickMenu()">person</span></a>
+            </div>            
         </div>
   
-        <menu>
-            <div class="menu">
-                <button id="menu-btn"><span class="material-icons">menu</span></button>
+        <div class="menu">
+            <span id="button" class="material-icons">menu</span>
+            <menu>   
                 <ul id="menu-list">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Lançamentos</a></li>
                     <li><a href="#">Produtos</a></li>
                     <li><a href="#">Sobre</a></li>
                 </ul>
-            </div>
-        </menu>
+            </menu>
+        </div>
     </header>
 
     <main>
@@ -113,5 +115,24 @@
         <p>Site de teste criado por <a href="https://github.com/nathaliadebona" target="_blank">Nathália de Bona</a>.</p>
         <p>*Imagens geradas por inteligência artificial*</p>
     </footer>
+
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>

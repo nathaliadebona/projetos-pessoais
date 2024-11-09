@@ -20,15 +20,76 @@ html, body {
 
 header > div#frete {
     background-color: #e4a446;
-    color: #f5d6c3;
+    color: #ffe2d0;
     font-family: Revise;
     text-align: center;
     height: 35px;
+    cursor: pointer;
 }
 
 div#frete > p {
     padding: 10px;
     text-decoration: underline;
+}
+
+header > div#title {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+}
+
+.icons {
+    color: #e4a446;
+}
+
+.icons:hover {
+    color: #e4a546a6;
+    cursor: pointer;
+}
+
+div#title > h1 {
+    font-family: Revise;
+}
+
+div.menu {
+    background-color: #f5d6c3;
+    text-align: center;
+}
+
+span#button {
+    color:#e4a446;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+span#button:hover {
+    color: #e4a546a6;
+}
+
+menu {
+    display: none;
+}
+
+menu > ul {
+    list-style-type: none;
+}
+
+div.menu > menu > ul > li > a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color:#e4a446 ;
+    color: black;
+    border-top: 2px solid gray;
+}
+
+menu > ul > li > a:hover {
+    background-color: gray;
 }
 
 main {
