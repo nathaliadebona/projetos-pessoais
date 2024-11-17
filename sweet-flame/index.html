@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body onresize="mudouTamanho()">
+<body>
     <header>
         <div id="frete">
             <p>Frete grátis para todo o Brasil a partir de R$250,00 em compras!</p>
@@ -23,27 +23,25 @@
             <div>
                 <a  class="icons" href="#"><span class="material-icons">shopping_bag</span></a>
 
-                <a  class="icons" href="#"><span class="material-icons" onclick="clickMenu()">person</span></a>
+                <a  class="icons" href="#"><span class="material-icons" >person</span></a>
             </div>            
         </div>
-  
-        <div class="menu">
-            <span id="button" class="material-icons">menu</span>
-            <menu>   
-                <ul id="menu-list">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Lançamentos</a></li>
-                    <li><a href="#">Produtos</a></li>
-                    <li><a href="#">Sobre</a></li>
-                </ul>
-            </menu>
-        </div>
+
+        <nav>
+            <button id="button"><span class="material-icons">menu</span></button>
+            <ul id="list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Lançamentos</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Sobre</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
         <section id="cupom">
             <p>Ganhe 15% de desconto em sua primeira compra!</p>
-            <button onclick="clique()">Clique Aqui!</button>
+            <button onclick="clique()">Cliqu qu!</button>
         </section>
 
         <section id="tarja">
@@ -116,23 +114,6 @@
         <p>*Imagens geradas por inteligência artificial*</p>
     </footer>
 
-    <script>
-        function mudouTamanho() {
-            if (window.innerWidth >= 768) {
-                itens.style.display = 'block'
-            } else {
-                itens.style.display = 'none'
-            }
-        }
 
-
-        function clickMenu() {
-            if (itens.style.display == 'block') {
-                itens.style.display = 'none'
-            } else {
-                itens.style.display = 'block'
-            }
-        }
-    </script>
 </body>
 </html>

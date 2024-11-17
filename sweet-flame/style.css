@@ -52,45 +52,44 @@ div#title > h1 {
     font-family: Revise;
 }
 
-div.menu {
-    background-color: #f5d6c3;
-    text-align: center;
-}
-
-span#button {
-    color:#e4a446;
-    display: block;
-    text-align: center;
+header > nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 10px;
-    cursor: pointer;
-    font-size: 24px;
+    background-color: #ffe2d0;
 }
 
-span#button:hover {
+nav > button#button {
+    background-color: #ffe2d0;
+    color: #e4a446;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+nav > button#button:hover {
     color: #e4a546a6;
 }
 
-menu {
+nav > ul#list {
     display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
 }
 
-menu > ul {
+ul#list > li {
     list-style-type: none;
 }
 
-div.menu > menu > ul > li > a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    text-align: center;
-    background-color:#e4a446 ;
+ul#list > li > a {
     color: black;
-    border-top: 2px solid gray;
+    text-decoration: none;
+    display: block;
 }
 
-menu > ul > li > a:hover {
-    background-color: gray;
-}
+
 
 main {
     position: relative;
@@ -98,4 +97,37 @@ main {
     margin: 0 auto;
     padding: 10px;
     text-align: center; 
+}
+
+main > section#cupom {
+    background-color: #e4a446;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+section#cupom > p {
+    padding: 10px;
+    font-family: Revise;
+    font-size: 1.5em;
+    align-self: center;
+
+}
+
+section#cupom > button {
+    height: 35px;
+    width: 150px;
+    background-color: #ffe2d0;
+    font-family: Revise;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+section#cupom > button:hover {
+    text-decoration: underline;
 }
