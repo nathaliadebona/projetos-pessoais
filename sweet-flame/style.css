@@ -23,7 +23,7 @@ header > div#frete {
     color: #ffe2d0;
     font-family: Revise;
     text-align: center;
-    height: 35px;
+    height: 40px;
     cursor: pointer;
 }
 
@@ -121,6 +121,7 @@ section#cupom > button {
     height: 35px;
     width: 150px;
     background-color: #ffe2d0;
+    color: black;
     font-family: Revise;
     font-size: 1.2em;
     border: none;
