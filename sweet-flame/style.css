@@ -143,7 +143,7 @@ h2 {
     margin: 20px;
 }
 
-section#colection {
+section#colection, section#destaque, section#vendidos {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -158,7 +158,7 @@ section#colection > div {
 }
 
 section#colection > div > img {
-    height: 200px;
-    width: 150px;
+    height: 300px;
+    width: 200px;
     border-radius: 150px 150px 0 0;
 }
