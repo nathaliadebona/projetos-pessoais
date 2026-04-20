@@ -262,7 +262,167 @@ header > nav > ul > li > a:hover {
     color: #3B1F0E;
 }
 
+.itens {
+    padding: 30px
+}
 
+.itens > h2 {
+    font-family: 'Playfair Display';
+    color: #C8864E;
+    margin-bottom: 10px;
+    padding: 12px;
+}
+
+.itens > table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #3B1F0E;
+    color: #FAF3EB;
+    padding: 10px;
+    text-align: left;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #E8C99A;
+}
+
+tr:nth-child(even) {
+    background-color: #eee1d4;
+}
+
+table th:nth-child(1),
+table td:nth-child(1) {
+    width: 20%;
+}
+
+table th:nth-child(2),
+table td:nth-child(2) {
+    width: 65%;
+}
+
+table th:nth-child(3),
+table td:nth-child(3) {
+    width: 15%;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.galeria > figure {
+    height: 380px;
+     overflow: hidden;
+     display: flex;
+     flex-direction: column;
+}
+
+.galeria > figure > img {
+    width: 100%;
+    flex: 1;
+    object-fit: cover;
+    min-height: 0;
+   
+}
+
+.galeria > figure > figcaption {
+    text-align: center;
+    font-style: italic;
+    color: #3B1F0E;
+    padding: 8px;
+    font-size: 14px;
+    flex-shrink: 0;
+}
+
+.contato {
+    text-align: center;
+    padding: 30px;
+}
+
+.contato > h2 {
+    font-family: 'Playfair Display';
+    color: #C8864E;
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.contato > p {
+    font-size: 18px;
+    color: #3B1F0E;
+    padding-bottom: 10px;
+}
+
+.formulario {
+    background-color: #E8C99A;
+    padding: 35px;
+    text-align: center;
+}
+
+.formulario > h2 {
+    font-family: 'Playfair Display';
+    color: #3B1F0E;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: inline-block;
+    text-align: left;
+    max-width: 400px;
+    width: 100%;
+}
+
+form > div {
+    margin-bottom: 15px;
+}
+
+form > div > label {
+    display: block;
+    margin-bottom: 5px;
+    color: #3B1F0E;
+    font-family: 'Playfair Display';
+    font-size: 20px;
+    font-weight: bold;
+}
+
+form > div > input,
+form > div > textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #3B1F0E;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: 'lato', sans-serif;
+}
+
+form > div > input:focus,
+form > div > textarea:focus {    
+    outline: none;
+    border-color: #C8864E;
+    box-shadow: 0 0 5px rgba(200, 134, 78, 0.5);
+}
+
+form > div > button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3B1F0E;
+    color: #E8C99A;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.4s, color 0.4s;  
+}
+
+form > div > button:hover {
+    background-color: #FAF3EB;
+    color: #3B1F0E;
+}
 
 footer {
     background-color: #3B1F0E;
