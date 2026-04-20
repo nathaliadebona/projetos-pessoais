@@ -6,3 +6,5 @@
 <a href="https://nathaliadebona.github.io/projetos-pessoais/holy-kitchen/">Executar projeto Holy Kitchen!</a>
 
 <a href="https://nathaliadebona.github.io/projetos-pessoais/sweet-flame/">Executar projeto Sweet Flame</a>
+
+<a href="(https://nathaliadebona.github.io/projetos-pessoais/cafe-velvet/home">Executar projeto Café Velvet</a>
