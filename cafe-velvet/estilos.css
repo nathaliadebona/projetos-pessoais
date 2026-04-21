@@ -14,7 +14,7 @@ body {
 }
 
 main {
-    padding-top: 78px;
+    padding-top: 122px;
     flex: 1;
 }
 
@@ -411,6 +411,7 @@ form > div > button {
     display: inline-block;
     padding: 10px 20px;
     background-color: #3B1F0E;
+    font-size: 16px;
     color: #E8C99A;
     font-weight: bold;
     border: none;
@@ -447,3 +448,109 @@ footer > p > a:hover {
     color: #E8C99A;
 }
 
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 15px;
+    }
+
+    header > nav {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    header > nav > ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .diferenciais-section {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .diferenciais {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .diferenciais > .card {
+        width: 95%;
+        margin-bottom: 20px;
+    }
+
+    .diferenciais > .card > h3 {
+        font-size: 20px;
+    }
+
+    .visita {
+        flex-direction: column;
+    }
+
+    .visita > figure, .visita-info {
+        width: 100%;
+    }
+
+    .secao-valores {
+        flex-direction: column;
+    }
+
+    .secao-valores > figure, .valores-texto {
+        width: 100%;
+    }
+
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 480px) {
+    main {
+        padding-top: 160px;
+    }
+
+    .hero > h2 {
+        font-size: 24px;
+    }
+
+    .hero > h3, .hero > p {
+        font-size: 16px;
+    }
+
+    .diferenciais-section {
+        padding: 0;
+    }
+
+    .diferenciais {
+        padding: 5px;
+        width: 90%;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .diferenciais > .card {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    .diferenciais > .card > h3 {
+        font-size: 18px;
+        word-break: break-word;
+    }
+
+    .diferenciais > .card > p {
+        font-size: 15px;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+}
