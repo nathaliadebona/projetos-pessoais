@@ -13,10 +13,6 @@ body {
     flex-direction: column; 
 }
 
-main {
-    padding-top: 79px;
-    flex: 1;
-}
 
 header {
     display: flex;
@@ -55,6 +51,11 @@ header > nav > ul > li > a {
 
 header > nav > ul > li > a:hover {
     color: #FAF3EB;
+}
+
+main {
+    padding-top: 79px;
+    flex: 1;
 }
 
 .hero {
