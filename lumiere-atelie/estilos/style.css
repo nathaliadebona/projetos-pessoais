@@ -21,8 +21,10 @@ header {
     background: transparent;
 }
 
+
 header.scrolled {
     background: #F0E8DF;
+    
 }
 
 header > .desconto {
@@ -68,35 +70,177 @@ header > .menu > nav > ul > li > a:hover {
 
 }
 
-main {
-    padding-top: 0;
-    flex: 1;
-    margin-top: 0;
-}
-
-main > .hero {
+.hero {
     display: flex;
+    flex-direction: column;
+    background-image: url("../imagens/hero-banner.png");
+    background-position: top center;
+    background-size: cover;
+    min-height: 600px;
+    padding-top: 120px;
+    padding-bottom: 60px;
+    justify-content: flex-start;
+}
+
+.hero > div {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    height: 100vh;
-    overflow: hidden;
+    justify-content: left;
+    gap: 20px;
+    max-width: 800px;
+    margin-top: 50px;
+}
+
+.hero > div > p {
+    font-family: 'Cormorant Garamond', serif;
+    color: #4A2E1A;
+    font-size: 28px;
+    margin: auto 0 auto 60px;
+    max-width: 500px;
+}
+
+.hero > div > a {
+    display: inline-block;
+    background-color: #4A2E1A;
+    text-decoration: none;
+    color: #F0E8DF; 
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 16px;
+    transition: background-color 0.4s, color 0.4s ease;
+}
+
+.hero > a:hover {
+    background-color: #C4946E;
+    color: #0D0D0D;   
+}
+
+.apresentacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+    gap: 40px;
+}
+
+.apresentacao > h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 32px;
+    color: #4A2E1A;
+}
+
+.apresentacao > p {
+    font-size: 20px;
+    text-align: center;
+    max-width: 850px;
+    line-height: 1.5;
+}
+
+
+.destaques-colecao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #9C6B45;
+    padding: 60px 20px;
+    gap: 40px;
+}
+
+.destaques-colecao > h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 32px;
+    color: #F0E8DF;
+    margin-bottom: 20px;
+}
+
+.destaques-colecao > a {
     background-color: #F0E8DF;
-    background-image: none;
+    color: #4A2E1A;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 14px 26px;
+    border-radius: 18px;
+    transition: background-color 0.4s, color 0.4s ease;
 }
 
-.hero-texto {
-    padding: 40px; 
-    flex: 0 0 40%;
+.destaques-colecao > a:hover {
+    background-color: #4A2E1A;
+    color: #F0E8DF;
+
 }
 
-.hero-img {
-    display: block;
-    height: 100%;
-    width: 60%;
+.destaques {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    text-align: center;
+}
+
+.destaques > div {
+    background-color: #F0E8DF;
+    padding-bottom: 22px;
+}
+
+.destaques > div > img {
+    width: 100%;
+    height: 340px;
     object-fit: cover;
-    object-position: 70% center;
-    flex-shrink: 0;
+    margin-bottom: 12px;
 }
-    
+
+.destaques > div > h4 {
+    font-family: 'Cormorant Garamond', serif;
+    color: #4A2E1A;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.destaques > div > p {
+    font-size: 15px;
+    padding: 0 10px;
+    margin-bottom: 8px;
+}
+
+.destaques > div > p.preco-destaques {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: #4A2E1A;
+}
+
+.storytelling {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0 60px 0;
+    gap: 40px;
+}
+
+.storytelling > div > h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 32px;
+    color: #4A2E1A;
+}
+
+.storytelling > div > p {
+    font-size: 18px;
+    max-width: 600px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.storytelling > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0% 30%;
+    overflow: hidden;
+}
+
+
+
 
 
 
