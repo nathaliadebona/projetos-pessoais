@@ -33,8 +33,10 @@
     </header>
 
     <main>
-        <h2>Vamos Conversar?</h2>
-        <h3>Encomendas personalizadas, kits corporativos ou só uma dúvida — pode falar.</h3>
+        <section class="contato-intro">
+            <h2>Vamos Conversar?</h2>
+            <h3>Encomendas personalizadas, kits corporativos ou só uma dúvida — pode falar.</h3>
+        </section>
     
         <section class="corporativos">
             <img src="imagens/sabonetes-personalizados.png" alt="Sabonetes Personalizados" title="Sabonetes personalizados feitos por encomenda">
@@ -52,11 +54,48 @@
         </section>
 
         <section>
-            <form action="#" method="get" autocomplete="on">
-                <h3>Nome <input type="text" id="nome" name="nome" placeholder="Insira seu nome" required></h3>
-                <h3>Email <input type="email" id="email" name="email" placeholder="Insira seu e-mail" required></h3>
-                <h3>Assunto </h3>
+            <form action="#" method="post">
+                <div>
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+
+                <div>
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div>
+                    <label for="assunto">Assunto</label>
+                    <select name="assunto" id="assunto" required>
+                        <option value="">Selecione uma opção</option>
+                        <option value="encomenda-pessoal">Encomenda pessoal</option>
+                        <option value="kit-corporativo">Kit Corporativo</option>
+                        <option value="duvida-produto">Dúvida sobre produto</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="mensagem">Mensagem</label>
+                    <textarea name="mensagem" id="mensagem" rows="5" required></textarea>
+                </div>
+
+                <button type="submit">Enviar mensagem</button>
             </form>
+        </section>
+
+        <section class="contato">
+            <ul>
+                <li>E-mail: ola@lumiereatelier.com.br</li>
+                <li>WhatsApp: (01) 2345-6789</li>
+                <li>Instagram: @lumiere.atelier</li>
+                <li>Respondo em até 2 dias úteis <i class="fa-regular fa-face-smile-beam"></i></li>
+            </ul>
+        </section>
+
+        <section class="nota-fechamento">
+            <p>Não faço envio automatizado. Cada pedido é embalado por mim, com cuidado</p>
         </section>
     </main>
 
