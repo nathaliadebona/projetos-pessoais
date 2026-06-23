@@ -6,28 +6,150 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+    <script src="https://kit.fontawesome.com/7bd2249743.js" crossorigin="anonymous"></script>
     <title>Lumière</title>
 </head>
 
 <body>
     <header>
-        <div>
+        <div class="desconto">
             <p>15% OFF na 1ª compra | Cupom PRIMEIRA15</p>
         </div>
 
-        <div>
+        <div class="menu">
             <h1>Lumière</h1>
 
             <nav>
                 <ul>
-                    <li><a href="#">Loja</a></li>
-                    <li><a href="#">O Ateliê</a></li>
-                    <li><a href="#">Presentes</a></li>
-                    <li><a href="#">Instagram</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="loja.html">Loja</a></li>
+                    <li><a href="sobre.html">O Ateliê</a></li>
+                    <li><a href="presentes.html">Presentes</a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
+    <main>
+        <section class="colecao"> 
+            <h2>Nossa Coleção</h2>
+            <h3>Tudo produzido em pequenos lotes, com ingredientes selecionados</h3>
+        </section>
     
+        <section class="velas">
+            <h2>Velas</h2>
+
+            <div>
+               <img src="imagens/nuit-de-figuier.png" alt="Vela Nuit de Figuier" title="Vela Nuit de Figuier">
+               <h3>Nuit de Figuier</h3>
+               <p>Figo maduro, cedro, almíscar branco</p>
+               <p>200g · queima aprox. 45h</p>
+               <p>R$ 89,00</p>
+            </div>
+
+            <div>
+                <img src="imagens/eau-de-pluie.png" alt="Vela Eau de Pluie" title="Vela Eau de Pluie">
+                <h3>Eau de Pluie</h3>
+                <p>Petrichor, musgo, linho fresco</p>
+                <p>180g · queima aprox. 40h</p>
+                <p>R$ 85,00</p>
+            </div>
+
+            <div>
+                <img src="imagens/tabac-e-miel.png" alt="Vela Tabac & Miel" title="Vela Tabac & Miel">
+                <h3>Tabac & Miel</h3>
+                <p>Tabaco suave, mel, baunilha</p>
+                <p>200g · queima aprox. 45h</p>
+                <p>R$ 89,00</p>
+            </div>
+
+            <div>
+                <img src="imagens/fleur-sauvage.png" alt="Vela Fleur Sauvage" title="Vela Fleur Sauvage">
+                <h3>Fleur Sauvage</h3>
+                <p>Peônia, rosa branca, íris</p>
+                <p>160g · queima aprox. 35h · <em>edição limitada</em></p>
+                <p>R$ 79,00</p>
+            </div>
+        </section>
+
+        <section class="sabonetes">
+            <h2>Sabonetes</h2>
+            <div>
+                <img src="imagens/argila-rosada.png" alt="Sabonete Mousse de Argila Rosada" title="Sabonete Mousse de Argila Rosada">
+                <h3>Mousse de Argila Rosada</h3>
+                <p>Argila rosada, rosa mosqueta, lavanda</p>
+                <p>110g · cura 4 semanas</p>
+                <p>R$ 34,00</p>
+            </div>
+
+            <div>
+                <img src="imagens/aveia-e-mel.png" alt="Sabonete Aveia & Mel" title="Sabonete Aveia & Mel">
+                <h3>Aveia & Mel</h3>
+                <p>Aveia moída, mel silvestre, manteiga de karité</p>
+                <p>100g · cura 4 semanas</p>
+                <p>R$ 32,00</p>
+            </div>
+
+            <div>
+                <img src="imagens/carvao-e-hortela.png" alt="Sabonete Carvão Ativado + Hortelã" title="Sabonete Carvão Ativado + Hortelã">
+                <h3>Carvão Ativado + Hortelã</h3>
+                <p>Desintoxicante, refrescante</p>
+                <p>100g · cura 4 semanas</p>
+                <p>R$ 32,00</p>
+            </div>
+
+            <div>
+                <img src="imagens/coco-e-ylang.png" alt="Sabonete Leite de Coco e Ylang-ylang" title="Sabonete Leite de Coco e Ylang-ylang">
+                <h3>Leite de Coco e Ylang-ylang</h3>
+                <p>Hidratante, levemente floral</p>
+                <p>110g · cura 4 semanas</p>
+                <p>R$ 34,00</p>
+            </div>
+        </section>
+
+        <section class="kits">
+            <div>
+                <img src="imagens/kit-ritual-da-manha.png" alt="Kit Ritual da Manhã" title="Kit Ritual da Manhã com caixa de presente decorada e produtos selecionados">
+                <h3>Kit Ritual da Manhã</h3>
+                <p>Vela Eau de Pluie (mini) + Sabonete Aveia & Mel</p>
+                <p>Em caixa presente com fita</p>
+                <p>R$ 98,00</p>
+            </div>
+
+            <div>
+                <img src="imagens/kit-para-ela.png" alt="Kit Para Ela" title="Kit Para Ela com caixa de presente, cartão e produtos selecionados">
+                <h3>Kit Para Ela</h3>
+                <p>Vela Fleur Sauvage + Sabonete Argila Rosada + cartão escrito à mão</p>
+                <p>Em caixa presente com fita</p>
+                <p>R$ 119,00</p>
+            </div>
+
+            <div>
+                <img src="imagens/kit-presenteavel-completo.png" alt="Kit Presenteável Completo" title="Kit Presenteável Completo com caixa presente e produtos selecionados">
+                <h3>Kit Presenteável Completo</h3>
+                <p>Vela 200h à escolha + 2 sabonetes + saquinho seco de lavanda</p>
+                <p>Em caixa kraft com papel de seda</p>
+                <p>R$ 169,00</p>
+            </div>
+        </section>
+    
+        <section>
+            <p>Todos os produtos são feitos em pequenos lotes. Quando esgotado, a reposição leva de 2 a 3 semanas - entre em contato para reservar.</p>
+        </section>
+    </main>
+
+    <footer>
+        <h4>Lumière Atelier de Aromas</h4>
+        <p>&#169 2025 Lumière. Todos os direitos reservados.</p>
+        <ul>
+            <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+            <li><a href="https://www.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i>WhatsApp</a></li>
+            <li><a href="mailto:ola@lumiereatelier.com.br"><i class="fa-regular fa-envelope-open"></i>E-mail: ola@lumiereatelier.com.br</a></li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+</html>
