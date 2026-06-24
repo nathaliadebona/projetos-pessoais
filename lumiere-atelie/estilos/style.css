@@ -57,6 +57,7 @@ header.scrolled {
     background: var(--cor-offwhite);
 }
 
+/* Barra de desconto */
 .desconto {
     background-color: var(--cor-cacau);
     color: var(--cor-offwhite);
@@ -67,6 +68,7 @@ header.scrolled {
     padding: 8px;
 }
 
+/* Barra de navegação */
 .menu {
     display: flex;
     align-items: center;
@@ -322,6 +324,7 @@ div .preco-destaques {
     justify-content: center;                   
 }
 
+/* Último bloco — frase de fechamento e botão */
 .storytelling > div:last-child p {
     font-family: var(--fonte-display); 
     font-size: 36px;
@@ -331,6 +334,7 @@ div .preco-destaques {
     letter-spacing: 1px;
 }
 
+/* Botão montar meu kit */
 .storytelling > div:last-child a {
     display: inline-block;
     background-color: var(--cor-cacau);
@@ -351,6 +355,7 @@ div .preco-destaques {
 /* "fim" página home*/
 
 /*página loja*/
+/* Intro da coleção */
 .colecao {
     display: flex;
     flex-direction: column;
@@ -375,6 +380,7 @@ div .preco-destaques {
     color: var(--cor-ambar);
 }
 
+/* Seções de categoria — velas, sabonetes, kits */
 .velas,
 .sabonetes,
 .kits {
@@ -397,6 +403,7 @@ div .preco-destaques {
     border-bottom: 1px solid var(--cor-bege);
 }
 
+/* Card horizontal — imagem à esquerda, info à direita */
 .produto-card {
     display: grid;
     grid-template-columns: 300px 1fr;
@@ -404,6 +411,7 @@ div .preco-destaques {
     align-items: center;
 }
 
+/* Container da imagem com os dots */
 .produto-imagens {
     position: relative;
 }
@@ -415,6 +423,7 @@ div .preco-destaques {
     display: block;
 }
 
+/* Dots do carrossel */
 .dots {
     position: absolute;
     bottom: 12px;
@@ -437,6 +446,7 @@ div .preco-destaques {
     background-color: #fff;
 }
 
+/* Informações do produto */
 .produto-info {
     display: flex;
     flex-direction: column;
@@ -480,6 +490,7 @@ div .preco-destaques {
     display: block;
 }
 
+/* Nota de reposição */
 .nota-reposicao {
     background-color: var(--cor-bege);
     text-align: center;
@@ -489,6 +500,111 @@ div .preco-destaques {
     letter-spacing: 0.5px;
     color: var(--cor-cacau);
 }
+/*"fim" página loja*/
+
+/*página sobre*/
+/* Seção principal sobre */
+.sobre {
+    padding: 150px 48px 100px;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.sobre h2 {
+    font-family: var(--fonte-display);
+    font-size: 52px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    margin-bottom: 48px;
+}
+
+.sobre div {
+    padding: 32px 0;
+    border-top: 1px solid var(--cor-bege);
+}
+
+.sobre div p {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.9;
+    color: var(--cor-ambar);
+}
+
+/* Bloco do meio — estilo diferente */
+#bloco2 {
+    background-color: var(--cor-creme);
+    padding: 32px 40px;
+    border-left: 2px solid var(--cor-terracota);
+}
+
+/* Seção do processo */
+.processo {
+    background-color: var(--cor-bege);
+    padding: 100px 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+}
+
+.processo h2 {
+    font-family: var(--fonte-display);
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+/* Grid das 4 etapas */
+.processo > div {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 48px;
+    align-items: start;
+    width: 100%;
+    min-width: 800px;
+    padding: 25px 0;
+    border-top: 1px solid var(--cor-ambar);
+}
+
+.processo > div h3 {
+    font-family: var(--fonte-display);
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: var(--cor-cacau);
+}
+
+.processo > div p {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.8;
+    color: var(--cor-cacau);
+    opacity: 0.8;
+}
+
+/* Frase de fechamento*/
+.fechamento {
+    padding: 100px 48px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.fechamento p {
+    font-family: var(--fonte-display);
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: 1px;
+    color: var(--cor-cacau);
+    max-width: 600px;
+    line-height: 1.5;
+}
+/* "fim" página sobre */
 
 footer {
     background-color: var(--cor-cacau);
