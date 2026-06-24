@@ -130,6 +130,10 @@ header.scrolled {
         font-size: 26px;
     }
 
+    .menu nav {
+        margin-left: 0;
+    }
+
     .menu nav ul {
         gap: 16px;
     }
