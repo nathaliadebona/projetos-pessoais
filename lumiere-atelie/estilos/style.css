@@ -102,11 +102,61 @@ header.scrolled {
     opacity: 0.6;
 }
 
+/* Tablet — até 1024px */
+@media (max-width: 1024px) {
+    .menu {
+        padding: 16px 24px;
+    }
+
+    .menu h1 {
+        font-size: 28px;
+    }
+
+    .menu nav ul li a {
+        font-size: 18px;
+    }
+}
+
+/* Mobile — até 768px */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        padding: 16px;
+    }
+
+    .menu h1 {
+        font-size: 26px;
+    }
+
+    .menu nav ul {
+        gap: 16px;
+    }
+
+    .menu nav ul li a {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .desconto {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .menu nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px 16px;
+    }
+}
+
 /*página home*/
 .hero {
     background-image: 
     linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, transparent 40%),
-    url("../imagens/hero-banner-sm.webp");
+    url("../imagens/hero-banner-lg.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -830,8 +880,6 @@ div .preco-destaques {
     letter-spacing: 1px;
 }
 
-
-
 footer {
     background-color: var(--cor-cacau);
     color: var(--cor-offwhite);
@@ -877,19 +925,21 @@ footer ul li a:hover {
 }
 
 
-@media (min-width: 768px) {
+@media (max-width: 1280px) {
+  .hero {
+    background-image: 
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, transparent 40%),
+      url("../imagens/hero-banner-md.webp");
+  }
+}
+
+@media (max-width: 768px) {
     .hero {
         background-image: 
         linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, transparent 40%),
-        url("../imagens/hero-banner-md.webp");
+        url("../imagens/hero-banner-sm.webp");
         background-position: center;
     }
 }
 
-@media (min-width: 1280px) {
-  .hero {
-    background-image: 
-      linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, transparent 40%),
-      url("../imagens/hero-banner-lg.webp");
-  }
-}
+
