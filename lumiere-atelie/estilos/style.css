@@ -100,6 +100,7 @@ header.scrolled {
     opacity: 0.6;
 }
 
+/*página home*/
 .hero {
     background-image: 
     linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, transparent 40%),
@@ -347,10 +348,147 @@ div .preco-destaques {
   background-color: var(--cor-terracota);
   color: var(--cor-cacau);
 }
+/* "fim" página home*/
 
+/*página loja*/
+.colecao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 120px 48px 80px;
+    gap: 16px;
+    border-bottom: 1px solid var(--cor-bege);
+}
 
+.colecao h2 {
+    font-family: var(--fonte-display);
+    font-size: 48px;
+    font-weight: 300;
+    letter-spacing: 3px;
+}
 
+.colecao h3 {
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: var(--cor-ambar);
+}
 
+.velas,
+.sabonetes,
+.kits {
+    padding: 80px 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.velas h2,
+.sabonetes h2,
+.kits h2 {
+    font-family: var(--fonte-display);
+    font-size: 36px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--cor-bege);
+}
+
+.produto-card {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 48px;
+    align-items: center;
+}
+
+.produto-imagens {
+    position: relative;
+}
+
+.produto-imagens img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+}
+
+.dots {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.ativa {
+    background-color: #fff;
+}
+
+.produto-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.produto-info h3 {
+    font-family: var(--fonte-display);
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.produto-notas {
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--cor-ambar);
+    font-style: italic;
+}
+
+.produto-detalhes {
+    font-size: 13px;
+    font-weight: 300;
+    color: var(--cor-ambar);
+    opacity: 0.8;
+}
+
+.produto-preco {
+    font-family: var(--fonte-display);
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--cor-cacau);
+    margin-top: 16px;
+}
+
+.kits .produto-card > img {
+    width: 300px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+}
+
+.nota-reposicao {
+    background-color: var(--cor-bege);
+    text-align: center;
+    padding: 32px 48px;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    color: var(--cor-cacau);
+}
 
 footer {
     background-color: var(--cor-cacau);
