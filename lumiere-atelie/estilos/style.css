@@ -282,6 +282,7 @@ div .preco-destaques {
 
 .st-texto {
     padding: 60px;
+
 }
 
 .storytelling > div:nth-child(odd) {
@@ -290,8 +291,8 @@ div .preco-destaques {
 
 
 .storytelling > div:nth-child(even) {
-    background-color: var(--cor-creme);     
-    direction: rtl;
+    background-color: var(--cor-creme); 
+    display: flex;   
 }
 
 
@@ -305,6 +306,19 @@ div .preco-destaques {
     padding: 80px 48px;
     min-height: 300px;           
     gap: 32px;
+}
+
+.storytelling > div:nth-child(even) img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.storytelling > div:nth-child(even) .st-texto {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;                   
 }
 
 .storytelling > div:last-child p {
@@ -337,6 +351,49 @@ div .preco-destaques {
 
 
 
+
+footer {
+    background-color: var(--cor-cacau);
+    color: var(--cor-offwhite);
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+footer h4 {
+    font-family: var(--fonte-display);
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+footer p {
+    font-size: 13px;
+    font-weight: 300;
+    opacity: 0.7;
+}
+
+footer ul {
+    display: flex;
+    gap: 24px;
+    margin-top: 8px;
+}
+
+footer ul li a {
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    opacity: 0.85;
+    transition: opacity 0.3s ease;
+}
+
+footer ul li a:hover {
+    opacity: 1;
+}
 
 
 @media (min-width: 768px) {
