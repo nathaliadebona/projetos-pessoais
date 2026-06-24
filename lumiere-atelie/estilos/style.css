@@ -138,6 +138,7 @@ header.scrolled {
     color: var(--cor-offwhite);
     padding: 12px 28px;
     font-family: var(--fonte-corpo);
+    font-size: 14px;
     font-weight: 400;
     letter-spacing: 1.5px;
     border-radius: 2px;
@@ -150,6 +151,7 @@ header.scrolled {
     color: var(--cor-cacau);
 }
 
+/* Seção de apresentação da marca */
 .apresentacao {
     display: flex;
     flex-direction: column;
@@ -174,11 +176,13 @@ header.scrolled {
     color: var(--cor-ambar);
 }
 
+/* Seção de produtos em destaque */
 .destaques-colecao {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 80px 48px;
+    gap: 48px;
     background-color: var(--cor-bege);
 }
 
@@ -189,6 +193,7 @@ header.scrolled {
     letter-spacing: 2px;
 }
 
+/* Grid dos 3 cards */
 .destaques {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -197,7 +202,8 @@ header.scrolled {
     max-width: 1100px;
 }
 
-.destaques div {
+/* Card individual */
+.destaques > div {
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -233,13 +239,13 @@ div .preco-destaques {
     margin-top: auto;
 }
 
+/* Botão ver toda a loja */
 .destaques-colecao > a {
     font-size: 13px;
     font-weight: 400;
     letter-spacing: 2px;
     text-transform: uppercase;
     border-bottom: 1px solid var(--cor-cacau);
-    padding-top: 12px;
     padding-bottom: 4px;
     transition: opacity 0.3s ease;
 }
@@ -253,6 +259,7 @@ div .preco-destaques {
     flex-direction: column;
 }
 
+/* Storytelling da marca */
 .storytelling > div {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -606,6 +613,31 @@ div .preco-destaques {
 }
 /* "fim" página sobre */
 
+/* Página presentes e contato */
+.contato-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 120px 48px 80px;
+    gap: 16px;
+    border-bottom: 1px solid var(--cor-bege);
+}
+
+.contato-intro h2 {
+    font-family: var(--fonte-display);
+    font-size: 48px;
+    font-weight: 300;
+    letter-spacing: 3px;
+}
+
+.contato-intro h3 {
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: var(--cor-ambar);
+}
+
 footer {
     background-color: var(--cor-cacau);
     color: var(--cor-offwhite);
@@ -614,6 +646,7 @@ footer {
     flex-direction: column;
     gap: 16px;
 }
+
 
 footer h4 {
     font-family: var(--fonte-display);
