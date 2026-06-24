@@ -222,13 +222,120 @@ header.scrolled {
     color: var(--cor-ambar);
 }
 
-.preco-destaques {
+div .preco-destaques {
     font-family: var(--fonte-display);
     font-size: 20px;
     font-weight: 400;
     color: var(--cor-cacau);
     margin-top: auto;
 }
+
+.destaques-colecao > a {
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--cor-cacau);
+    padding-top: 12px;
+    padding-bottom: 4px;
+    transition: opacity 0.3s ease;
+}
+
+.destaques-colecao > a:hover {
+    opacity: 0.6;
+}
+
+.storytelling {
+    display: flex;
+    flex-direction: column;
+}
+
+.storytelling > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    min-height: 500px;
+}
+
+.storytelling > div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.storytelling > div h3 {
+    font-family: var(--fonte-display);
+    font-size: 36px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+}
+
+.storytelling > div p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.8;
+    color: var(--cor-ambar);
+    max-width: 420px;
+}
+
+.st-texto {
+    padding: 60px;
+}
+
+.storytelling > div:nth-child(odd) {
+    background-color: var(--cor-offwhite);
+}
+
+
+.storytelling > div:nth-child(even) {
+    background-color: var(--cor-creme);     
+    direction: rtl;
+}
+
+
+.storytelling > div:last-child {
+    display: flex;              
+    flex-direction: column;
+    align-items: center;         
+    justify-content: center;
+    text-align: center;
+    background-color: var(--cor-bege);
+    padding: 80px 48px;
+    min-height: 300px;           
+    gap: 32px;
+}
+
+.storytelling > div:last-child p {
+    font-family: var(--fonte-display); 
+    font-size: 36px;
+    font-weight: 300;
+    color: var(--cor-cacau);
+    max-width: 500px;
+    letter-spacing: 1px;
+}
+
+.storytelling > div:last-child a {
+    display: inline-block;
+    background-color: var(--cor-cacau);
+    color: var(--cor-offwhite);
+    padding: 12px 28px;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.storytelling > div:last-child a:hover {
+  background-color: var(--cor-terracota);
+  color: var(--cor-cacau);
+}
+
+
+
 
 
 
