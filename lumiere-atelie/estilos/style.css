@@ -614,19 +614,20 @@ div .preco-destaques {
 /* "fim" página sobre */
 
 /* Página presentes e contato */
+/* Intro da página */
 .contato-intro {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 120px 48px 80px;
+    padding: 150px 48px 80px;
     gap: 16px;
     border-bottom: 1px solid var(--cor-bege);
 }
 
 .contato-intro h2 {
     font-family: var(--fonte-display);
-    font-size: 48px;
+    font-size: 52px;
     font-weight: 300;
     letter-spacing: 3px;
 }
@@ -636,7 +637,200 @@ div .preco-destaques {
     font-weight: 300;
     letter-spacing: 1px;
     color: var(--cor-ambar);
+    max-width: 610px;
+    line-height: 1.7;
 }
+
+/* Seções corporativos e especiais — imagem + texto lado a lado */
+.corporativos,
+.especiais {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    min-height: 500px;
+}
+
+.corporativos img,
+.especiais img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.corporativos {
+    background-color: var(--cor-offwhite);
+}
+
+.especiais {
+    background-color: var(--cor-creme);
+    direction: rtl;
+}
+
+/* Texto das seções */
+.corporativos h2, 
+.especiais h2 {
+    font-family: var(--fonte-display);
+    font-size: 36px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+}
+
+.corporativos p,
+.especiais p {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.8;
+    color: var(--cor-ambar);
+    direction: ltr;
+}
+
+/* Agrupa o texto de cada seção */
+.corporativos > div,
+.especiais > div {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Botão solicitar orçamento */
+.corporativos a {
+    display: inline-block;
+    background-color: var(--cor-cacau);
+    color: var(--cor-offwhite);
+    padding: 12px 28px;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    margin-top: 16px;
+    align-self: flex-start;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.corporativos a:hover {
+    background-color: var(--cor-terracota);
+    color: var(--cor-cacau);
+}
+
+/* Formulário */
+.formulario {
+    padding: 100px 48px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--cor-offwhite);
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.formulario div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.formulario label {
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--cor-cacau);
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--cor-ambar);
+    padding: 12px 0;
+    font-family: var(--fonte-corpo);
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--cor-cacau);
+    outline: none;
+    width: 100%;
+}
+
+.formulario textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.formulario input:focus,
+.formulario select:focus,
+.formulario textarea:focus {
+    border-bottom-color: var(--cor-cacau);
+}
+
+.formulario button {
+    background-color: var(--cor-cacau);
+    color: var(--cor-offwhite);
+    padding: 14px 32px;
+    font-family: var(--fonte-corpo);
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.formulario button:hover {
+    background-color: var(--cor-terracota);
+    color: var(--cor-cacau);
+}
+
+/* Informações de contato */
+.contato {
+    padding: 80px 48px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--cor-bege);
+}
+
+.contato ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contato ul li {
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    color: var(--cor-cacau);
+}
+
+/* Nota de fechamento */
+.nota-fechamento {
+    padding: 48px;
+    text-align: center;
+    border-top: 1px solid var(--cor-bege);
+}
+
+.nota-fechamento p {
+    font-family: var(--fonte-display);
+    font-size: 18px;
+    font-weight: 300;
+    font-style: italic;
+    color: var(--cor-ambar);
+    letter-spacing: 1px;
+}
+
+
 
 footer {
     background-color: var(--cor-cacau);
