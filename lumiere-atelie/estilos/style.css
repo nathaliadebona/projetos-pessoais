@@ -205,6 +205,48 @@ header.scrolled {
     color: var(--cor-cacau);
 }
 
+@media (max-width: 1024px) {
+    .hero-texto {
+        padding: 32px;
+        max-width: 400px;
+    }
+
+    .hero-texto p {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        align-items: flex-end;
+        justify-content: center;
+        background-position: top center;
+    }
+
+    .hero-texto {
+        width: 100%;
+        max-width: 100%;
+        padding: 32px;
+        margin-top: 0;
+        background-color: rgba(240, 232, 223, 0.85);
+    }
+
+    .hero-texto p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-texto p {
+        font-size: 18px;
+    }
+
+    .btn-hero {
+        font-size: 13px;
+        padding: 10px 20px;
+    }
+}
+
 /* Seção de apresentação da marca */
 .apresentacao {
     display: flex;
