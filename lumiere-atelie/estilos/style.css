@@ -29,6 +29,11 @@ body {
     line-height: 1.6;
 }
 
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
 img {
     max-width: 100%;
     display: block;
@@ -781,6 +786,100 @@ div .preco-destaques {
     letter-spacing: 0.5px;
     color: var(--cor-cacau);
 }
+
+/* Tablet — até 1024px */
+@media (max-width: 1024px) {
+    .colecao {
+        padding: 120px 32px 60px;  /* reduz o padding lateral */
+    }
+
+    .colecao h2 {
+        font-size: 40px;
+    }
+
+    .velas,
+    .sabonetes,
+    .kits {
+        padding: 60px 32px;        /* reduz o padding das seções */
+    }
+
+    .produto-card {
+        grid-template-columns: 220px 1fr;  /* reduz a largura da imagem */
+        gap: 32px;
+    }
+
+    .kits .produto-card > img {
+        width: 220px;              /* acompanha o tamanho da coluna */
+    }
+}
+
+/* Mobile — até 768px */
+@media (max-width: 768px) {
+    .colecao {
+        padding: 170px 24px 48px;
+    }
+
+    .colecao h2 {
+        font-size: 32px;
+    }
+
+    .velas,
+    .sabonetes,
+    .kits {
+        padding: 48px 24px;
+    }
+
+    .velas h2,
+    .sabonetes h2,
+    .kits h2 {
+        font-size: 28px;
+    }
+
+    .produto-card {
+        grid-template-columns: 1fr;  /* remove as duas colunas */
+    }
+
+    .produto-imagens img {
+        aspect-ratio: 1 / 1;  
+        object-fit: cover;
+        object-position: center;      
+    }
+
+    .produto-info h3 {
+        font-size: 22px;
+    }
+
+    .kits .produto-card > img {
+        width: 100%;                 /* imagem ocupa a largura toda */
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        object-position: top center;
+    }
+}
+
+/* Mobile pequeno — até 480px */
+@media (max-width: 480px) {
+    .colecao {
+        padding: 170px 24px 48px;
+    }
+
+    .colecao h2 {
+        font-size: 28px;
+    }
+
+    .produto-info h3 {
+        font-size: 20px;
+    }
+
+    .produto-preco {
+        font-size: 20px;
+    }
+
+    .nota-reposicao {
+        padding: 24px 16px;
+        font-size: 13px;
+    }
+}
 /*"fim" página loja*/
 
 /*página sobre*/
@@ -885,6 +984,80 @@ div .preco-destaques {
     max-width: 600px;
     line-height: 1.5;
 }
+
+/* Tablet — até 1024px */
+@media (max-width: 1024px) {
+    .sobre {
+        padding: 120px 48px 80px;  /* reduz o padding lateral */
+    }
+
+    .sobre h2 {
+        font-size: 40px;
+    }
+
+    .processo {
+        padding: 80px 32px;
+    }
+
+    .processo > div {
+        grid-template-columns: 150px 1fr;  /* reduz a coluna do título */
+        gap: 32px;
+    }
+}
+
+/* Mobile — até 768px */
+@media (max-width: 768px) {
+    .sobre {
+        padding: 170px 24px 48px;
+    }
+
+    .sobre h2 {
+        font-size: 32px;
+    }
+
+    .processo {
+        padding: 60px 24px;
+    }
+
+    /* cada etapa vira coluna única — título em cima, texto embaixo */
+    .processo > div {
+        gap: 8px;                   /* reduz o espaço entre título e texto */
+        max-width: 100%;
+    }
+
+    .processo h2 {
+        font-size: 32px;
+    }
+
+    .processo > div h3 {
+        font-size: 17px;
+    }
+
+    .fechamento > div p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+}
+
+/* Mobile pequeno — até 480px */
+@media (max-width: 480px) {
+    .sobre {
+        padding: 170px 24px 48px;
+    }
+
+    .sobre h2 {
+        font-size: 28px;
+    }
+
+    .fechamento {
+        padding: 60px 24px;
+    }
+
+    .fechamento p {
+        font-size: 22px;
+    }
+}
+
 /* "fim" página sobre */
 
 /* Página presentes e contato */
