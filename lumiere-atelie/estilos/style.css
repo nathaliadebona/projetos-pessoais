@@ -206,6 +206,13 @@ header.scrolled {
 }
 
 @media (max-width: 1024px) {
+    .hero {
+        background-image: 
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, transparent 40%),
+        url("../imagens/hero-banner-md.webp");
+        background-position: center;
+    }
+
     .hero-texto {
         padding: 32px;
         max-width: 400px;
@@ -218,6 +225,10 @@ header.scrolled {
 
 @media (max-width: 768px) {
     .hero {
+        background-image: 
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, transparent 40%),
+        url("../imagens/hero-banner-sm.webp");
+        background-position: top center;
         align-items: flex-end;
         justify-content: center;
         background-position: top center;
@@ -568,6 +579,11 @@ div .preco-destaques {
     .storytelling > div img {
         height: 300px;           
         width: 100%;
+        order: 1;
+    }
+
+    .storytelling > div .st-texto {
+        order: 0;                    /* texto sempre primeiro */
     }
 
     .storytelling > div:nth-child(even) {
@@ -577,11 +593,11 @@ div .preco-destaques {
 
     .storytelling > div:nth-child(even) img {
         width: 100%;
-        order: 0;                
+        order: 1;                
     }
 
     .storytelling > div:nth-child(even) .st-texto {
-        order: 1;               
+        order: 0;               
         width: 100%;
         direction: ltr;
     }
@@ -617,8 +633,6 @@ div .preco-destaques {
         font-size: 24px;
     }
 }
-
-
 /* "fim" página home*/
 
 /*página loja*/
@@ -1132,6 +1146,36 @@ footer ul li a {
 
 footer ul li a:hover {
     opacity: 1;
+}
+
+/* Tablet — até 1024px */
+@media (max-width: 1024px) {
+    footer {
+        padding: 40px 32px;      /* reduz o padding lateral */
+    }
+}
+
+/* Mobile — até 768px */
+@media (max-width: 768px) {
+    footer {
+        padding: 32px 24px;
+    }
+
+    footer ul {
+        flex-direction: column;  /* links empilham em vez de ficarem lado a lado */
+        gap: 16px;
+  }
+}
+
+/* Mobile pequeno — até 480px */
+@media (max-width: 480px) {
+    footer h4 {
+        font-size: 20px;         /* reduz o nome da marca */
+    }
+
+    footer p {
+        font-size: 12px;         /* reduz o copyright */
+    }
 }
 
 
