@@ -387,6 +387,56 @@ div .preco-destaques {
     opacity: 0.6;
 }
 
+/* Tablet — até 1024px */
+@media (max-width: 1024px) {
+    .destaques-colecao {
+        padding: 60px 32px;
+    }
+
+    .destaques {
+        grid-template-columns: repeat(2, 1fr);  /* 3 colunas viram 2 */
+        max-width: 700px;
+    }
+
+    .destaques > div:last-child {
+        grid-column: 1 / -1;     /* ocupa as duas colunas */
+        max-width: 50%;           /* mas só metade da largura */
+        margin: 0 auto;           /* centraliza */
+  }
+}
+
+/* Mobile — até 768px */
+@media (max-width: 768px) {
+    .destaques-colecao {
+        padding: 48px 24px;
+    }
+
+    .destaques {
+        grid-template-columns: 1fr;  /* 2 colunas viram 1 — cards empilham */
+        max-width: 400px;
+    }
+
+    .destaques > div:last-child {
+        max-width: 100%;           /* mas só metade da largura */
+        margin: 0 auto;           /* centraliza */
+  }
+
+    .destaques-colecao h3 {
+        font-size: 32px;
+    }
+}
+
+/* Mobile pequeno — até 480px */
+@media (max-width: 480px) {
+    .destaques-colecao h3 {
+        font-size: 26px;
+    }
+
+    .destaques > div {
+        padding: 16px;           /* reduz o padding interno dos cards */
+    }
+}
+
 .storytelling {
     display: flex;
     flex-direction: column;
@@ -492,6 +542,83 @@ div .preco-destaques {
   background-color: var(--cor-terracota);
   color: var(--cor-cacau);
 }
+
+/* Tablet — até 1024px */
+@media (max-width: 1024px) {
+    .storytelling > div {
+        min-height: 400px;       /* reduz a altura mínima dos blocos */
+    }
+
+    .st-texto {
+        padding: 40px;           /* reduz o padding do texto */
+    }
+
+    .storytelling > div h3 {
+        font-size: 28px;         /* reduz o título */
+    }
+}
+
+/* Mobile — até 768px */
+@media (max-width: 768px) {
+    .storytelling > div {
+        grid-template-columns: 1fr;  
+        min-height: auto;            
+    }
+
+    .storytelling > div img {
+        height: 300px;           
+        width: 100%;
+    }
+
+    .storytelling > div:nth-child(even) {
+        display: grid;          
+        direction: ltr;         
+    }
+
+    .storytelling > div:nth-child(even) img {
+        width: 100%;
+        order: 0;                
+    }
+
+    .storytelling > div:nth-child(even) .st-texto {
+        order: 1;               
+        width: 100%;
+        direction: ltr;
+    }
+
+    .st-texto {
+        padding: 32px 24px;      
+    }
+
+    .storytelling > div h3 {
+        font-size: 26px;
+    }
+
+    .storytelling > div:last-child {
+        padding: 60px 24px;      
+    }
+
+    .storytelling > div:last-child p {
+        font-size: 28px;         
+    }
+}
+
+/* Mobile pequeno — até 480px */
+@media (max-width: 480px) {
+    .storytelling > div img {
+        height: 240px;           /* reduz ainda mais a altura da imagem */
+    }
+
+    .storytelling > div h3 {
+        font-size: 22px;
+    }
+
+    .storytelling > div:last-child p {
+        font-size: 24px;
+    }
+}
+
+
 /* "fim" página home*/
 
 /*página loja*/
