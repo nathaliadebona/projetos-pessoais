@@ -272,6 +272,43 @@ header.scrolled {
     color: var(--cor-ambar);
 }
 
+/* Tablet — até 1024px */
+@media (max-width: 1024px) {
+    .apresentacao {
+        padding: 80px 80px;
+    }
+
+    .apresentacao h2 {
+        font-size: 40px;
+    }
+}
+
+/* Mobile — até 768px */
+@media (max-width: 768px) {
+    .apresentacao {
+        padding: 60px 32px;
+    }
+
+    .apresentacao h2 {
+        font-size: 32px;
+    }
+
+    .apresentacao p {
+        font-size: 15px;
+    }
+}
+
+/* Mobile pequeno — até 480px */
+@media (max-width: 480px) {
+    .apresentacao {
+        padding: 48px 24px;
+    }
+
+    .apresentacao h2 {
+        font-size: 28px;
+}
+}
+
 /* Seção de produtos em destaque */
 .destaques-colecao {
     display: flex;
