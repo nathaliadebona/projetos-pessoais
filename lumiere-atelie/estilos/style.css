@@ -1275,6 +1275,97 @@ div .preco-destaques {
     letter-spacing: 1px;
 }
 
+/* Tablet — até 1024px */
+@media (max-width: 1024px) {
+    .contato-intro {
+        padding: 120px 32px 60px;
+    }
+
+    .contato-intro h2 {
+        font-size: 40px;
+    }
+
+    .corporativos,
+    .especiais {
+        min-height: 400px;
+    }
+
+    .formulario {
+        padding: 80px 32px;
+    }
+}
+
+/* Mobile — até 768px */
+@media (max-width: 768px) {
+    .contato-intro {
+        padding: 170px 24px 48px;   /* padding-top maior por causa do menu empilhado */
+  }
+
+  .contato-intro h2 {
+    font-size: 32px;
+  }
+
+  .corporativos,
+  .especiais {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .corporativos img,
+  .especiais img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .especiais {
+    direction: ltr;
+  }
+
+  .corporativos > div,
+  .especiais > div {
+    padding: 32px 24px;
+  }
+
+  .corporativos h2,
+  .especiais h2 {
+    font-size: 28px;
+  }
+
+  .formulario {
+    padding: 60px 24px;
+  }
+
+  .contato {
+    padding: 48px 24px;
+  }
+
+  .nota-fechamento {
+    padding: 32px 24px;
+  }
+}
+
+/* Mobile pequeno — até 480px */
+@media (max-width: 480px) {
+    .contato-intro h2 {
+        font-size: 28px;
+    }
+
+    .corporativos img,
+    .especiais img {
+        height: 240px;               /* reduz ainda mais a imagem */
+    }
+
+    .formulario button {
+        width: 100%;                 /* botão ocupa a largura toda no mobile pequeno */
+        text-align: center;
+    }
+
+    .contato ul li {
+        font-size: 13px;
+    }
+}
+
 footer {
     background-color: var(--cor-cacau);
     color: var(--cor-offwhite);
