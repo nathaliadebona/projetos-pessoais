@@ -945,7 +945,6 @@ div .preco-destaques {
     gap: 48px;
     align-items: start;
     width: 100%;
-    min-width: 800px;
     padding: 25px 0;
     border-top: 1px solid var(--cor-ambar);
 }
@@ -1021,6 +1020,7 @@ div .preco-destaques {
 
     /* cada etapa vira coluna única — título em cima, texto embaixo */
     .processo > div {
+        grid-template-columns: 1fr;
         gap: 8px;                   /* reduz o espaço entre título e texto */
         max-width: 100%;
     }
@@ -1030,12 +1030,11 @@ div .preco-destaques {
     }
 
     .processo > div h3 {
-        font-size: 17px;
+        font-size: 18px;
     }
 
     .fechamento > div p {
         font-size: 14px;
-        line-height: 1.7;
     }
 }
 
@@ -1057,7 +1056,6 @@ div .preco-destaques {
         font-size: 22px;
     }
 }
-
 /* "fim" página sobre */
 
 /* Página presentes e contato */
