@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7bd2249743.js" crossorigin="anonymous"></script>
+    <title>Glow Republic - Sua pele, sua vibe.</title>
+</head>
+
+<body>
+    <header id="top">
+        <nav>
+            <a href="#">GLOW</a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="products.html">Produtos</a></li>
+                <li><a href="about.html">Sobre</a></li>
+                <li><a href="contact.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="intro-produtos">
+            <h1>Nossas linhas</h1>
+            <p>Cada produto pensado pra encaixar na sua rotina, não o contrário.</p>
+        </section>
+
+        <div class="filtros">
+            <button data-filtro="todos">Todos</button>
+            <button data-filtro="hidratacao">Hidratação</button>
+            <button data-filtro="limpeza">limpeza</button>
+            <button data-filtro="fps">FPS</button>
+            <button data-filtro="tratamento">Tratamento</button>
+        </div>
+
+        <section id="produtos">
+            <div class="grid-produtos">
+                <div class="card-produto" data-categoria="tratamento">
+                    <span class="tag-categoria">Tratamento</span>
+                    <h3>Glow Burst Serum</h3>
+                    <p class="descricao">Vitamina C + ácido hialurônico. Pele iluminada em 2 semanas.</p>
+                    <p class="preco">R$ 89,90</p>
+                    <button class="btn-modal">Saiba mais</button>
+                </div>
+
+                <div class="card-produto" data-categoria="limpeza">
+                    <span class="tag-categoria">Limpeza</span>
+                    <h3>Cloud Cleanser</h3>
+                    <p class="descricao">Textura mousse ultra leve. Remove tudo, não resseca nada.</p>
+                    <p class="preco">R$ 54,90</p>
+                    <button class="btn-modal">Saiba mais</button>
+                </div>
+
+                <div class="card-produto" data-categoria="hidratacao">
+                    <span class="tag-categoria">Hidratação</span>
+                    <h3>Aqua Bomb</h3>
+                    <p class="descricao">Hidratação de 72h com textura gel. Aquela sensação de pele bebê.</p>
+                    <p class="preco">R$ 67,90</p>
+                    <button class="btn-modal">Saiba mais</button>
+                </div>
+
+                <div class="card-produto" data-categoria="fps">
+                    <span class="tag-categoria">FPS</span>
+                    <h3>Solar Glow FPS 50</h3>
+                    <p class="descricao">Proteção solar com acabamento luminoso. Protetor que você vai querer usar.</p>
+                    <p class="preco">R$ 79,90</p>
+                    <button class="btn-modal">Saiba mais</button>
+                </div>
+
+                <div class="card-produto" data-categoria="limpeza">
+                    <span class="tag-categoria">Limpeza</span>
+                    <h3>Pore Reset</h3>
+                    <p class="descricao">Máscara de argila que desintoxica sem agressividade. Poros, tchau.</p>
+                    <p class="preco">R$ 49,90</p>
+                    <button class="btn-modal">Saiba mais</button>
+                </div>
+
+                <div class="card-produto" data-categoria="tratamento">
+                    <span class="tag-categoria">Tratamento</span>
+                    <h3>Night Ritual</h3>
+                    <p class="descricao">Creme noturno com retinol encapsulado. Acorda diferente.</p>
+                    <p class="preco">R$ 94,90</p>
+                    <button class="btn-modal">Saiba mais</button>
+                </div>
+            </div>
+        </section>
+
+        <div class="modal" id="modal-glow-burst">
+            <div class="modal-conteudo">
+                <button class="fechar-modal">✕</button>
+                <h2>Glow Burst Serum</h2>  <!--nome do produto-->
+                <p>Nossa fórmula concentrada combina Vitamina C estabilizada com Ácido Hialurônico pra iluminar, hidratar e uniformizar o tom da pele. Resultado visível em 2 semanas.</p> <!--descrição completa-->
+                <h4>Ingredientes Principais:</h4> <!--ingredientes principais-->
+                <ul> <!--ul com 3 li de ingredientes-->
+                    <li>Vitamina C estabilizada</li>
+                    <li>Ácido Hialurônico</li>
+                    <li>Niacinamida</li>
+                </ul>
+                <h4>Indicado para:</h4> <!--Indicado para-->
+                <p>Pele opaca, com manchas ou sem viço</p> <!--com tipo de pele-->
+            </div>
+        </div>
+
+        <div class="modal" id="modal-cloud-cleanser">
+            <div class="modal-conteudo">
+                <button class="fechar-modal">✕</button>
+                <h2>Cloud Cleanser</h2>
+                <p>Textura mousse leve que dissolve maquiagem, protetor e impurezas sem agredir a barreira da pele. Limpa de verdade e ainda deixa hidratada.</p>
+                <h4>Ingredientes Principais:</h4>
+                <ul>
+                    <li>Extrato de Aloe Vera</li>
+                    <li>Pantenol</li>
+                    <li>Glicerina vegetal</li>
+                </ul>
+                <h4></h4>
+                <p></p>
+            </div>
+        </div>
+
+        <div class="modal" id="">
+            <div class="modal-conteudo">
+                <button class="fechar-modal">✕</button>
+                <h2></h2>
+                <p></p>
+                <h4></h4>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <h4></h4>
+                <p></p>
+            </div>
+        </div>
+
+        <div class="modal" id="">
+            <div class="modal-conteudo">
+                <button class="fechar-modal">✕</button>
+                <h2></h2>
+                <p></p>
+                <h4></h4>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <h4></h4>
+                <p></p>
+            </div>
+        </div>
+
+        <div class="modal" id="">
+            <div class="modal-conteudo">
+                <button class="fechar-modal">✕</button>
+                <h2></h2>
+                <p></p>
+                <h4></h4>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <h4></h4>
+                <p></p>
+            </div>
+        </div>
+
+        <div class="modal" id="">
+            <div class="modal-conteudo">
+                <button class="fechar-modal">✕</button>
+                <h2></h2>
+                <p></p>
+                <h4></h4>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <h4></h4>
+                <p></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <h4>Glow Republic</h4>
+        <p>Skincare sem desculpa.</p>
+
+        <div>
+            <h4>Redes sociais:</h4>
+            <nav>
+                <ul>
+                    <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.instagram.com/"><i class="fa-brands fa-tiktok"></i></a></li>
+                    <li><a href="https://br.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <p><em>&#169 2025 Glow Republic. Todos os direitos reservados.</em></p>
+        <p>Feito com <i class="fa-solid fa-heart"></i> em São Paulo</p>
+    </footer>
+
+    <a href="#top" class="voltar-ao-topo">
+        <i class="fa-solid fa-angle-up"></i>
+    </a>
+</body>
+</html>
