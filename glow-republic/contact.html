@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7bd2249743.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>Glow Republic - Sua pele, sua vibe.</title>
+</head>
+
+<body>
+    <header id="top">
+        <nav>
+            <a href="index.html" class="logo">GLOW</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Produtos</a></li>
+                <li><a href="about.html">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="intro-contato">
+            <h1>Fala com a gente</h1>
+            <p>Parcerias, imprensa, dúvidas ou só quer dar um oi - pode mandar.</p>
+        </section>
+
+        <section id="contato">
+            <form action="" id="form-contato">
+                <label for="nome">Nome completo</label>
+                <input type="text" id="nome" placeholder="Seu nome">
+                <span class="erro"></span>
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="seu@email.com">
+                <span class="erro"></span>
+
+                <label for="assunto">Assunto</label>
+                <select name="assunto" id="assunto">
+                    <option value="">Selecione um assunto</option>
+                    <option value="parceria">Parceria comercial</option>
+                    <option value="imprensa">Imprensa</option>
+                    <option value="duvida">Dúvida sobre produto</option>
+                    <option value="outro">Outro</option>
+                </select>
+
+                <span class="erro"></span>
+
+                <label for="mensagem">Mensagem</label>
+                <textarea name="mensagem" id="mensagem" placeholder="Escreva sua mensagem aqui" rows="5"></textarea>
+                <span class="erro"></span>
+
+                <button type="submit">Enviar mensagem</button>
+
+                <div id="mensagem-sucesso">Mensagem recebida! A gente entra em contato em até 2 dias úteis. <i class="fa-solid fa-heart"></i></div>
+            </form>
+
+            <div class="info-contato">
+                <h3>Ou nos encontre por aqui:</h3>
+                <p><i class="fa-brands fa-instagram"></i> @glowrepublic</p>
+                <p><i class="fa-solid fa-envelope"></i> oi@glowrepublic.com.br</p>
+                <p>Respondemos DMs também <i class="fa-regular fa-face-smile-beam"></i></p>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <h4>Glow Republic</h4>
+        <p>Skincare sem desculpa.</p>
+
+        <div>
+            <h4>Redes sociais:</h4>
+            <nav>
+                <ul>
+                    <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.instagram.com/"><i class="fa-brands fa-tiktok"></i></a></li>
+                    <li><a href="https://br.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <p><em>&#169 2025 Glow Republic. Todos os direitos reservados.</em></p>
+        <p>Feito com <i class="fa-solid fa-heart"></i> em São Paulo</p>
+    </footer>
+
+    <a href="#top" class="voltar-ao-topo">
+        <i class="fa-solid fa-angle-up"></i>
+    </a>
+</body>
+</html>

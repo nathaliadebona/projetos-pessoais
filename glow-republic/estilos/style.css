@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+:root {
+    --rosa: #FF3CAC;
+    --amarelo: #FFDE59;
+    --verde: #3CFFA0;
+    --roxo: #1A0033;
+    --branco: #FFFFFF;
+    --cinza-claro: #F0EDF5;
+    --cinza-texto: #555555;
+
+    --fonte-titulo: 'Plus Jakarta Sans', sans-serif;
+    --fonte-corpo: 'DM Sans', sans-serif;
+}
+
+body {
+    font-family: var(--fonte-corpo);
+    color: var(--roxo);
+    background-color: var(--branco);
+    line-height: 1.6;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 5%;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+nav a.logo {
+    font-family: var(--fonte-titulo);
+    font-size: 1.8rem;
+    color: var(--rosa);
+    font-weight: 800;
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+}
+
+nav ul li a {
+    color: var(--branco);
+    font-family: var(--fonte-corpo);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--rosa);
+}
+
+.nav-scrolled {
+    background-color: var(--roxo);
+    backdrop-filter: blur(10px);
+}
+
+footer {
+    background-color: var(--roxo);
+    color: var(--cinza-claro);
+    font-family: var(--fonte-corpo);
+    padding: 4rem 5%;;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+}
+
+footer h4:first-child {
+    font-family: var(--fonte-titulo);
+    font-size: 2rem;
+    color: var(--rosa);
+    font-weight: 800;
+}
+
+footer nav ul {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer nav ul li a {
+    color: var(--cinza-claro);
+    transition: color 0.3s ease;
+}
+
+footer nav ul li a:hover {
+    color: var(--rosa);
+}
+
+footer .fa-brands,
+footer .fa-solid {
+    font-size: 1.3rem;
+    color: var(--cinza-claro);
+    transition: color 0.3s ease;
+}
+
+footer .fa-brands:hover,
+footer .fa-solid:hover {
+    color: var(--rosa);
+}
+
+p > em {
+    font-size: 0.85rem;
+    opacity: 0.6;
+}

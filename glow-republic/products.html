@@ -7,18 +7,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7bd2249743.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilos/style.css">
     <title>Glow Republic - Sua pele, sua vibe.</title>
 </head>
 
 <body>
     <header id="top">
         <nav>
-            <a href="#">GLOW</a>
+            <a href="index.html" class="logo">GLOW</a>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="products.html">Produtos</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Produtos</a></li>
                 <li><a href="about.html">Sobre</a></li>
                 <li><a href="contact.html">Contato</a></li>
+                <li><a href="blog.html">Blog</a></li>
             </ul>
         </nav>
     </header>
@@ -32,7 +34,7 @@
         <div class="filtros">
             <button data-filtro="todos">Todos</button>
             <button data-filtro="hidratacao">Hidratação</button>
-            <button data-filtro="limpeza">limpeza</button>
+            <button data-filtro="limpeza">Limpeza</button>
             <button data-filtro="fps">FPS</button>
             <button data-filtro="tratamento">Tratamento</button>
         </div>
@@ -92,16 +94,16 @@
         <div class="modal" id="modal-glow-burst">
             <div class="modal-conteudo">
                 <button class="fechar-modal">✕</button>
-                <h2>Glow Burst Serum</h2>  <!--nome do produto-->
-                <p>Nossa fórmula concentrada combina Vitamina C estabilizada com Ácido Hialurônico pra iluminar, hidratar e uniformizar o tom da pele. Resultado visível em 2 semanas.</p> <!--descrição completa-->
-                <h4>Ingredientes Principais:</h4> <!--ingredientes principais-->
-                <ul> <!--ul com 3 li de ingredientes-->
+                <h2>Glow Burst Serum</h2>  
+                <p>Nossa fórmula concentrada combina Vitamina C estabilizada com Ácido Hialurônico pra iluminar, hidratar e uniformizar o tom da pele. Resultado visível em 2 semanas.</p> 
+                <h4>Ingredientes Principais:</h4> 
+                <ul> 
                     <li>Vitamina C estabilizada</li>
                     <li>Ácido Hialurônico</li>
                     <li>Niacinamida</li>
                 </ul>
-                <h4>Indicado para:</h4> <!--Indicado para-->
-                <p>Pele opaca, com manchas ou sem viço</p> <!--com tipo de pele-->
+                <h4>Indicado para:</h4> 
+                <p>Pele opaca, com manchas ou sem viço</p> 
             </div>
         </div>
 
@@ -116,72 +118,72 @@
                     <li>Pantenol</li>
                     <li>Glicerina vegetal</li>
                 </ul>
-                <h4></h4>
-                <p></p>
+                <h4>Indicado para:</h4>
+                <p>Todo tipo de pele, inclusive sensível</p>
             </div>
         </div>
 
-        <div class="modal" id="">
+        <div class="modal" id="modal-aqua-bomb">
             <div class="modal-conteudo">
                 <button class="fechar-modal">✕</button>
-                <h2></h2>
-                <p></p>
-                <h4></h4>
+                <h2>Aqua Bomb</h2>
+                <p>Gel de hidratação intensa com textura que some na pele. 72h de hidratação comprovada, sem sensação gordurosa. O favorito da linha.</p>
+                <h4>Ingredientes Principais:</h4>
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>Ácido Hialurônico</li>
+                    <li>Extrato de Pepino</li>
+                    <li>Ceramidas</li>
                 </ul>
-                <h4></h4>
-                <p></p>
+                <h4>Indicado para:</h4>
+                <p>Pele desidratada ou oleosa que precisa de hidratação leve</p>
             </div>
         </div>
 
-        <div class="modal" id="">
+        <div class="modal" id="modal-solar-glow">
             <div class="modal-conteudo">
                 <button class="fechar-modal">✕</button>
-                <h2></h2>
-                <p></p>
-                <h4></h4>
+                <h2>Solar Glow FPS 50</h2>
+                <p>Protetor solar de amplo espectro com acabamento luminoso — não esbranquiça, não entope poro e fica perfeito embaixo da maquiagem. Desculpa pra não pular o FPS não existe mais.</p>
+                <h4>Ingredientes Principais:</h4>
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>Filtros UVA/UVB</li>
+                    <li>Vitamina E</li>
+                    <li>Extrato de Chá Verde</li>
                 </ul>
-                <h4></h4>
-                <p></p>
+                <h4>Indicado para:</h4>
+                <p>Todo tipo de pele, uso diário</p>
             </div>
         </div>
 
-        <div class="modal" id="">
+        <div class="modal" id="modal-pore-reset">
             <div class="modal-conteudo">
                 <button class="fechar-modal">✕</button>
-                <h2></h2>
-                <p></p>
-                <h4></h4>
+                <h2>Pore Reset</h2>
+                <p>Máscara de argila que absorve o excesso de oleosidade e desobstrui os poros sem ressecar. Use uma vez por semana e veja a diferença.</p>
+                <h4>Ingredientes Principais:</h4>
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>Argila Caulim</li>
+                    <li>Ácido Salicílico</li>
+                    <li>Extrato de Melaleuca</li>
                 </ul>
-                <h4></h4>
-                <p></p>
+                <h4>Indicado para:</h4>
+                <p>Pele oleosa, com poros dilatados ou propensa a acne</p>
             </div>
         </div>
 
-        <div class="modal" id="">
+        <div class="modal" id="modal-night-ritual">
             <div class="modal-conteudo">
                 <button class="fechar-modal">✕</button>
-                <h2></h2>
-                <p></p>
-                <h4></h4>
+                <h2>Night Ritual</h2>
+                <p>Creme noturno com retinol de liberação lenta pra minimizar irritação. Age enquanto você dorme: afina linhas finas, uniformiza textura e deixa a pele renovada de manhã.</p>
+                <h4>Ingredientes Principais:</h4>
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>Retinol Encapsulado</li>
+                    <li>Esqualano</li>
+                    <li>Péptidos</li>
                 </ul>
-                <h4></h4>
-                <p></p>
+                <h4>Indicado para:</h4>
+                <p>Pele madura ou com sinais de envelhecimento precoce</p>
             </div>
         </div>
     </main>
