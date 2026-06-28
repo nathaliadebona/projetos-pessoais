@@ -1,0 +1,141 @@
+:root {
+    --rosa: #FF3CAC;
+    --amarelo: #FFDE59;
+    --verde: #3CFFA0;
+    --roxo: #1A0033;
+    --branco: #FFFFFF;
+    --cinza-claro: #F0EDF5;
+    --cinza-texto: #555555;
+
+    --fonte-titulo: 'Plus Jakarta Sans', sans-serif;
+    --fonte-corpo: 'DM Sans', sans-serif;
+}
+
+header nav {
+    background-color: var(--roxo);
+}
+
+#intro-contato {
+    background-color: var(--roxo);
+    padding: 8rem 5% 4rem;
+    text-align: center;
+}
+
+#intro-contato h1 {
+    font-family: var(--fonte-titulo);
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--branco);
+    margin-bottom: 1rem;
+}
+
+#intro-contato p {
+    color: var(--cinza-claro);
+    font-size: 1.1rem;
+}
+
+#contato {
+    background-color: var(--branco);
+    padding: 5rem 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+#form-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#form-contato label {
+    font-weight: 600;
+    color: var(--roxo);
+    font-size: 0.95rem;
+    margin-bottom: 0.3rem;
+    display: block;
+}
+
+#form-contato input, 
+#form-contato select, 
+#form-contato textarea {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 2px solid var(--cinza-claro);
+    border-radius: 10px;
+    font-family: var(--fonte-corpo);
+    font-size: 1rem;
+    color: var(--roxo);
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#form-contato input:focus, 
+#form-contato select:focus, 
+#form-contato textarea:focus {
+    border-color: var(--rosa);
+}
+
+#form-contato textarea {
+    resize: vertical;
+}
+
+.erro {
+    color: var(--rosa);
+    font-size: 0.8rem;
+    display: block;
+    margin-top: 0.3rem;
+}
+
+#form-contato button[type="submit"] {
+    background-color: var(--rosa);
+    color: var(--branco);
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    border: none;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    align-self: flex-start;
+}
+
+#form-contato button[type="submit"]:hover {
+    opacity: 0.85;
+}
+
+#mensagem-sucesso {
+    display: none;
+    background-color: var(--verde);
+    color: var(--roxo);
+    padding: 1.5rem;
+    border-radius: 10px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.info-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-top: 1rem;
+}
+
+.info-contato h3 {
+    font-family: var(--fonte-titulo);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--roxo);
+}
+
+.info-contato p {
+    color: var(--cinza-texto);
+    font-size: 1rem;
+}
+
+.info-contato a {
+    color: var(--rosa);
+    font-weight: 600;
+
+}

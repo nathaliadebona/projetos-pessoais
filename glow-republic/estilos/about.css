@@ -1,0 +1,162 @@
+:root {
+    --rosa: #FF3CAC;
+    --amarelo: #FFDE59;
+    --verde: #3CFFA0;
+    --roxo: #1A0033;
+    --branco: #FFFFFF;
+    --cinza-claro: #F0EDF5;
+    --cinza-texto: #555555;
+
+    --fonte-titulo: 'Plus Jakarta Sans', sans-serif;
+    --fonte-corpo: 'DM Sans', sans-serif;
+}
+
+header nav {
+    background-color: var(--roxo);
+}
+
+#hero-about {
+    background-color: var(--rosa);
+    background-image: url('../imagens/bancada.webp');
+    background-size: cover;
+    background-position: center 60%;
+    background-blend-mode: multiply;
+    min-height: 60vh;
+    padding: 10rem 5% 5rem;
+    text-align: center;
+}
+
+#hero-about h1 {
+    font-family: var(--fonte-titulo);
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--branco);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+#historia {
+    background-color: var(--branco);
+    padding: 5rem 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.historia-texto h2 {
+    font-family: var(--fonte-titulo);
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--roxo);
+    margin-bottom: 1.5rem;
+}
+
+.historia-texto p {
+    color: var(--cinza-texto);
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+#historia img {
+    border-radius: 20px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#numeros {
+    background-color: var(--roxo);
+    padding: 5rem 5%;
+    text-align: center;
+}
+
+#numeros h2 {
+    font-family: var(--fonte-titulo);
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--branco);
+    margin-bottom: 3rem;
+}
+
+.grid-numeros {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.bloco-numero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contador {
+    font-family: var(--fonte-titulo);
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: var(--amarelo);
+}
+
+.bloco-numero p {
+    color: var(--cinza-claro);
+    font-size: 1rem;
+}
+
+#time {
+    background-color: var(--cinza-claro);
+    padding: 5rem 5%;
+    text-align: center;
+}
+
+#time h2 {
+    font-family: var(--fonte-titulo);
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--roxo);
+    margin-bottom: 3rem;
+}
+
+.grid-time {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.card-pessoa {
+    background-color: var(--branco);
+    border-radius: 20px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.8rem;
+}
+
+.card-pessoa img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+}
+
+.card-pessoa h3 {
+    font-family: var(--fonte-titulo);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--roxo);
+}
+
+.cargo {
+    color: var(--rosa);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.card-pessoa p {
+    color: var(--cinza-texto);
+    font-size: 0.9rem;
+}

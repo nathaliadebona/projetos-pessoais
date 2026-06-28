@@ -1,0 +1,78 @@
+:root {
+    --rosa: #FF3CAC;
+    --amarelo: #FFDE59;
+    --verde: #3CFFA0;
+    --roxo: #1A0033;
+    --branco: #FFFFFF;
+    --cinza-claro: #F0EDF5;
+    --cinza-texto: #555555;
+
+    --fonte-titulo: 'Plus Jakarta Sans', sans-serif;
+    --fonte-corpo: 'DM Sans', sans-serif;
+}
+
+header nav {
+    background-color: var(--roxo);
+}
+
+#post {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 8rem 2rem 5rem;
+}
+
+.post-header {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.post-header h1 {
+    font-family: var(--fonte-titulo);
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--roxo);
+    line-height: 1.2;
+}
+
+.data-post {
+    color: var(--cinza-texto);
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
+
+.post-conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.post-conteudo p {
+    color: var(--cinza-texto);
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.post-conteudo strong {
+    color: var(--roxo);
+}
+
+.post-footer {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--cinza-claro);
+}
+
+.post-footer a {
+    color: var(--rosa);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: opacity 0.3s ease;
+}
+
+.post-footer a:hover {
+    opacity: 0.75;
+}
