@@ -10,3 +10,5 @@
 <a href="https://nathaliadebona.github.io/projetos-pessoais/cafe-velvet/home">Executar projeto Café Velvet</a>
 
 <a href="http://nathaliadebona.github.io/projetos-pessoais/lumiere-atelie/index">Executar projeto Lumière Ateliê</a>
+
+<a href="http://nathaliadebona.github.io/projetos-pessoais/glow-republic/index">Executar projeto Glow Republic</a>
