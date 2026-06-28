@@ -1,0 +1,225 @@
+:root {
+    --rosa: #FF3CAC;
+    --amarelo: #FFDE59;
+    --verde: #3CFFA0;
+    --roxo: #1A0033;
+    --branco: #FFFFFF;
+    --cinza-claro: #F0EDF5;
+    --cinza-texto: #555555;
+
+    --fonte-titulo: 'Plus Jakarta Sans', sans-serif;
+    --fonte-corpo: 'DM Sans', sans-serif;
+}
+
+#intro-produtos {
+    background-color: var(--roxo);
+    padding: 8rem 5% 4rem;
+    text-align: center;
+}
+
+#intro-produtos h1 {
+    font-family: var(--fonte-titulo);
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--branco);
+    margin-bottom: 1rem;
+}
+
+#intro-produtos p {
+    color: var(--cinza-claro);
+    font-size: 1.1rem;
+}
+
+.filtros {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 3rem 5% 1rem;
+    flex-wrap: wrap;
+    background-color: var(--cinza-claro);
+}
+
+.filtros button {
+    border: 2px solid var(--rosa);
+    color: var(--rosa);
+    background-color: transparent;
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: var(--fonte-corpo);
+    transition: all 0.3s ease;
+}
+
+.filtros button:hover {
+    background-color: var(--rosa);
+    color: var(--branco);
+}
+
+.filtros button.ativo {
+    background-color: var(--rosa);
+    color: var(--branco);
+}
+
+#produtos {
+    background-color: var(--cinza-claro);
+    padding: 2rem 5% 5rem;
+}
+
+.grid-produtos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.grid-produtos .card.produto {
+    min-height: 300px;
+    justify-content: space-between;
+}
+
+.grid-produtos .card.produto .btn-modal {
+    margin-top: auto;
+}
+
+.grid-produtos .card-produto:nth-child(1) {
+    background-color: var(--rosa);
+    color: var(--branco);
+}
+
+.grid-produtos .card-produto:nth-child(2) {
+    background-color: #7B2FBE;
+    color: var(--branco);
+}
+
+.grid-produtos .card-produto:nth-child(3) {
+    background-color: var(--verde);
+    color: var(--roxo);
+}
+
+.grid-produtos .card-produto:nth-child(4) {
+    background-color: var(--amarelo);
+    color: var(--roxo);
+}
+
+.grid-produtos .card-produto:nth-child(5) {
+    background-color: #FFB3DE;
+    color: var(--roxo);
+}
+
+.grid-produtos .card-produto:nth-child(6) {
+    background-color: #1A0033;
+    color: var(--branco);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.btn-modal {
+    background-color: var(--branco);
+    padding: 0.6rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    align-self: flex-start;
+    font-family: var(--fonte-corpo);
+    transition: opacity 0.3s ease;
+    display: inline-block;
+    width: fit-content;
+}
+
+.btn-modal:hover {
+    opacity: 0.85;
+}
+
+.grid-produtos .card-produto:nth-child(1) .btn-modal {
+    color: var(--rosa);
+}
+
+.grid-produtos .card-produto:nth-child(2) .btn-modal {
+    color: #7B2FBE;
+}
+
+.grid-produtos .card-produto:nth-child(3) .btn-modal {
+    color: var(--verde);
+}
+
+.grid-produtos .card-produto:nth-child(4) .btn-modal {
+    color: var(--amarelo);
+}
+
+.grid-produtos .card-produto:nth-child(5) .btn-modal {
+    color: #FFB3DE;
+}
+
+.grid-produtos .card-produto:nth-child(6) .btn-modal {
+    color: var(--branco);
+    background-color: rgba(255,255,255,0.15);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(26, 0, 51, 0.85);
+    z-index: 2000;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal.ativo {
+    display: flex;
+}
+
+.modal-conteudo {
+    background-color: var(--branco);
+    border-radius: 20px;
+    padding: 3rem;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.modal-conteudo h2 {
+    font-family: var(--fonte-titulo);
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--roxo);
+}
+
+.modal-conteudo h4 {
+    color: var(--rosa);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.modal-conteudo p,
+.modal-conteudo li {
+    color: var(--cinza-texto);
+    font-size: 0.95rem;
+}
+
+.modal-conteudo ul {
+    padding-left: 1.2rem;
+    list-style: disc;
+}
+
+.fechar-modal {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--cinza-texto);
+}
+
+.fechar-modal:hover {
+    color: var(--rosa);
+}

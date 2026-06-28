@@ -81,7 +81,7 @@ footer {
     background-color: var(--roxo);
     color: var(--cinza-claro);
     font-family: var(--fonte-corpo);
-    padding: 4rem 5%;;
+    padding: 4rem 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -96,35 +96,56 @@ footer h4:first-child {
     font-weight: 800;
 }
 
-footer nav ul {
+footer ul {
     display: flex;
     gap: 1.5rem;
     flex-wrap: wrap;
     justify-content: center;
 }
-
-footer nav ul li a {
+footer ul li a {
     color: var(--cinza-claro);
     transition: color 0.3s ease;
 }
 
-footer nav ul li a:hover {
+footer ul li a:hover {
     color: var(--rosa);
 }
 
-footer .fa-brands,
-footer .fa-solid {
-    font-size: 1.3rem;
-    color: var(--cinza-claro);
-    transition: color 0.3s ease;
+footer ul li a svg {
+    fill: var(--cinza-claro);
+    stroke: var(--cinza-claro);
+    width: 24px;
+    height: 24px;
+    transition: fill 0.3s ease;
 }
 
-footer .fa-brands:hover,
-footer .fa-solid:hover {
-    color: var(--rosa);
+footer ul li a:hover svg {
+    fill: var(--rosa);
+    stroke: var(--rosa);
 }
 
-p > em {
+footer p > em {
     font-size: 0.85rem;
     opacity: 0.6;
+}
+
+.voltar-ao-topo {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: var(--rosa);
+    color: var(--branco);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    z-index: 999;
+    transition: opacity 0.3s ease;
+}
+
+.voltar-ao-topo:hover {
+    opacity: 0.85;
 }
