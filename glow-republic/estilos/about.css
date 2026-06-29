@@ -160,3 +160,27 @@ header nav {
     color: var(--cinza-texto);
     font-size: 0.9rem;
 }
+
+@media (max-width: 768px) {
+    #historia {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    #hero-about h1 {
+        font-size: 2.5rem;
+    }
+
+    .grid-numeros {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .contador {
+        font-size: 2.5rem;
+    }
+
+    .grid-time {
+        grid-template-columns: 1fr;
+    }
+}

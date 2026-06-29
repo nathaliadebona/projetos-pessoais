@@ -76,3 +76,13 @@ header nav {
 .post-footer a:hover {
     opacity: 0.75;
 }
+
+@media (max-width: 768px) {
+    #post {
+        padding: 7rem 1.5rem 3rem;
+    }
+
+    .post-header h1 {
+        font-size: 1.8rem;
+    }
+}

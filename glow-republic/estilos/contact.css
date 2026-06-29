@@ -137,5 +137,11 @@ header nav {
 .info-contato a {
     color: var(--rosa);
     font-weight: 600;
+}
 
+@media (max-width: 768px) {
+    #contato {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
 }

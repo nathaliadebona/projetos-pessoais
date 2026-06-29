@@ -112,6 +112,10 @@
     border: 1px solid rgba(255,255,255,0.1);
 }
 
+.card-produto.escondido {
+    display: none;
+}
+
 .btn-modal {
     background-color: var(--branco);
     padding: 0.6rem 1.5rem;
@@ -222,4 +226,20 @@
 
 .fechar-modal:hover {
     color: var(--rosa);
+}
+
+@media (max-width: 768px) {
+    .grid-produtos {
+        grid-template-columns: 1fr;
+    }
+
+    .filtros {
+        gap: 0.5rem;
+        padding: 2rem 5% 1rem;
+    }
+
+    .filtros button {
+        font-size: 0.85rem;
+        padding: 0.4rem 1rem;
+    }
 }

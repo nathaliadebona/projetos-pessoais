@@ -97,6 +97,13 @@
     border-radius: 50px;
     font-weight: 600;
     z-index: 1;
+    animation: flutuar 2s ease-in-out infinite;
+}
+
+@keyframes flutuar {
+    0% { transform: translateY(0);}
+    50% { transform: translateY(-10px);}
+    100% { transform: translateY(0);}
 }
 
 #destaques {
@@ -416,4 +423,71 @@
 
 #cta a:hover {
     opacity: 0.85;
+}
+
+@media (max-width: 768px) {
+    #hero {
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 5%;
+        align-items: flex-start;
+    }
+
+    .hero-texto {
+        padding-left: 5%;
+        width: 100%;
+    }
+
+    .hero-texto h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-botoes {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .ver-produtos, 
+    .nossa-historia {
+        text-align: center;
+    }
+
+    .grid-destaques {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-destaques .card-produto span,     
+    .grid-destaques .card-produto a {
+        align-self: center;
+    }
+
+    #manifesto blockquote {
+        font-size: 1.3rem;
+    }
+
+    #pilares {
+        padding: 3rem 5%;
+    }
+
+    .grid-pilares {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .grid-depoimentos {
+        grid-template-columns: 1fr;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .newsletter-form input {
+        width: 100%;
+    }
+
+    .newsletter-form button {
+        width: 100%;
+    }
 }

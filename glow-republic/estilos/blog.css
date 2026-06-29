@@ -116,3 +116,9 @@ header nav {
 .card-post a:hover {
     opacity: 0.85;
 }
+
+@media (max-width: 768px) {
+    .grid-posts {
+        grid-template-columns: 1fr;
+    }
+}

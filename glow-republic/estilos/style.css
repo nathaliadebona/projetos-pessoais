@@ -77,6 +77,15 @@ nav ul li a:hover {
     backdrop-filter: blur(10px);
 }
 
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--branco);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
 footer {
     background-color: var(--roxo);
     color: var(--cinza-claro);
@@ -148,4 +157,52 @@ footer p > em {
 
 .voltar-ao-topo:hover {
     opacity: 0.85;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--roxo);
+        padding: 1rem 5%;
+        gap: 1rem;
+    }
+
+    nav ul.menu-aberto {
+        display: flex;
+    }
+
+    footer {
+        padding: 3rem 5%;
+    }
+
+    footer uk {
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-texto h1 {
+        font-size: 2rem;
+    }
+
+    #destaques h2,
+    #pilares h2,
+    #depoimentos h2,
+    #newsletter h2,
+    #cta h2 {
+        font-size: 1.8rem;
+    }
+
+    #manifesto blockquote {
+        font-size: 1.1rem;
+    }
 }
