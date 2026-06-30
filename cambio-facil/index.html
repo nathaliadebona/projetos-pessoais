@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CâmbioFácil - Conversor de Moedas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">CâmbioFácil</div>
+    <p class="tagline">Converta moedas em segundos.</p>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Sem complicação. Sem taxas escondidas pra você descobrir depois.</h1>
+
+      <div class="conversor-card">
+        <div class="campo">
+          <label for="valor">Valor</label>
+          <input type="number" id="valor" placeholder="0,00">
+        </div>
+
+        <div class="selects">
+          <div class="campo">
+            <label for="moeda-origem">De</label>
+            <select id="moeda-origem">
+              <option value="BRL">BRL - Real</option>
+              <option value="USD">USD - Dólar</option>
+              <option value="EUR">EUR - Euro</option>
+              <option value="GBP">GBP - Libra</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label for="moeda-destino">Para</label>
+            <select id="moeda-destino">
+              <option value="USD">USD - Dólar</option>
+              <option value="BRL">BRL - Real</option>
+              <option value="EUR">EUR - Euro</option>
+              <option value="GBP">GBP - Libra</option>
+            </select>
+          </div>
+        </div>
+
+        <button id="btn-converter">Converter</button>
+
+        <div class="resultado" id="resultado">
+          <!-- resultado vai aparecer aqui via JS -->
+        </div>
+      </div>
+    </section>
+
+    <section class="como-funciona">
+      <h2>Como funciona</h2>
+      <div class="passos">
+        <div class="passo">
+          <span class="numero">1</span>
+          <p>Escolha a moeda de origem</p>
+        </div>
+        <div class="passo">
+          <span class="numero">2</span>
+          <p>Escolha a moeda de destino</p>
+        </div>
+        <div class="passo">
+          <span class="numero">3</span>
+          <p>Veja o resultado na hora</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>CâmbioFácil — conversão simples para o seu dia a dia.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
