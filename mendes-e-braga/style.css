@@ -53,6 +53,7 @@ header {
     left: 0;
     width: 100%;
     z-index: 100;
+    transition: all 0.3s ease;
 }
 
 header h1 {
@@ -65,6 +66,12 @@ header nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+
+.nav-scrolled {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    padding: 1rem 5%;
+    transition: all 0.3s ease;
 }
 
 header nav ul {
@@ -93,6 +100,10 @@ header nav ul li a:hover {
 
 header nav ul li:hover {
     color: var(--color-accent-dark);
+}
+
+.menu-hamburguer {
+    display: none;
 }
 
 header .btn-contato {
@@ -432,6 +443,13 @@ header .btn-contato:hover {
     color: var(--color-bg);
 }
 
+#mensagem-sucesso {
+    display: none;
+    color: var(--color-accent);
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
 .grid-contato {
     align-items: start;
     gap: 2rem;
@@ -483,6 +501,78 @@ footer a {
 
 footer a:hover {
     color: var(--color-bg);
+}
+
+@media (max-width: 768px) {
+    .menu-hamburguer {
+        display: block;
+        background: none;
+        border: none;
+        color: var(--color-bg);
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    header nav.nav-aberto {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-dark);
+    padding: 1.5rem;
+    }
+
+    #hero .hero-texto h2 {
+        font-size: 1.8rem;
+    }
+
+    #hero .hero-texto p {
+        font-size: 1rem;
+    }
+
+    .grid-numeros {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 2rem;
+    }
+
+    .bloco-numero:nth-child(2n) {
+        border-right: none;
+    }
+
+    #quem-somos h2 {
+        font-size: 1.8rem;
+    }
+
+    #quem-somos p {
+        font-size: 1rem;
+    }
+
+    #diferenciais .grid-diferenciais {
+        grid-template-columns: 1fr;
+    }
+
+    #portfolio .grid-portfolio {
+        grid-template-columns: 1fr;
+    }
+
+    #portfolio .grid-portfolio h2 {
+        font-size: 1.5rem;
+    }
+
+    #contato .grid-contato {
+        grid-template-columns: 1fr;
+    }
+
+    #contato .grid-contato h2 {
+        font-size: 1.2rem;
+    }
+
 }
 
 

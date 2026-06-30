@@ -23,6 +23,10 @@
             </ul>
         </nav>
 
+        <button class="menu-hamburguer" id="menu-hamburguer">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
         <a href="#contato" class="btn-contato">Fale Conosco</a>
     </header>
 
@@ -56,7 +60,7 @@
                 </div>
 
                 <div class="bloco-numero">
-                    <span class="contador" data-valor="2,4">R$ 2.4 bi</span>
+                    <span class="contador" data-valor="R$ 2.4 bi">R$ 2.4 bi</span>
                     <p>Em empreendimentos</p>
                 </div>
 
@@ -178,8 +182,11 @@
                         <span class="erro"></span>
                         <label for="mensagem">Mensagem</label>
                         <textarea name="mensagem" id="mensagem" placeholder="Escreva sua mensagem"></textarea>
-                
                         <span class="erro"></span>
+
+                        <div class="mensagem-sucesso" id="mensagem-sucesso">
+                            Mensagem enviada com sucesso! Entraremos em contato em breve.
+                        </div>
                         <button type="submit">Enviar mensagem</button>
                     </form>
                 </div>
